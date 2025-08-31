@@ -6,68 +6,65 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-white shadow px-4 sticky-top">
-        <div className="container">
-          {/* Brand Logo */}
-          <Link className="navbar-brand fw-bold fs-3" to="/">
-            <span className="logo-orange">Ma</span>
-            <span className="logo-brown">veen</span>
+      <nav className="bg-white shadow-md sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
+          
+          {/* Logo */}
+          <Link to="/" className="text-2xl font-bold">
+            <span className="text-orange-500">Ma</span>
+            <span className="text-brown-700">veen</span>
           </Link>
 
-          {/* Toggler for mobile */}
+          {/* Mobile menu button */}
           <button
-            className="navbar-toggler border-0"
-            type="button"
+            className="lg:hidden p-2 rounded-md text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-400"
             onClick={() => setMenuOpen(!menuOpen)}
           >
-            <span className="navbar-toggler-icon"></span>
+            {/* Hamburger icon */}
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth={2}
+              viewBox="0 0 24 24"
+            >
+              {menuOpen ? (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              ) : (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              )}
+            </svg>
           </button>
 
-          {/* Desktop Nav */}
-          <div className="d-none d-lg-flex justify-content-end">
-            <ul className="navbar-nav mb-2 mb-lg-0 gap-lg-4">
-              <li className="nav-item">
-                <Link className="nav-link" to="/">Home</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/about">About Us</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/services">Services</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/customers">Customers</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/contact">Contact</Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-      {/* Mobile Dropdown Card */}
-      {menuOpen && (
-        <div className="bg-white shadow rounded-3 m-3 p-3 d-lg-none animate-dropdown">
-          <ul className="list-unstyled mb-0">
-            <li className="mb-2">
-              <Link className="text-dark text-decoration-none" to="/" onClick={() => setMenuOpen(false)}>Home</Link>
-            </li>
-            <li className="mb-2">
-              <Link className="text-dark text-decoration-none" to="/about" onClick={() => setMenuOpen(false)}>About Us</Link>
-            </li>
-            <li className="mb-2">
-              <Link className="text-dark text-decoration-none" to="/services" onClick={() => setMenuOpen(false)}>Services</Link>
-            </li>
-            <li className="mb-2">
-              <Link className="text-dark text-decoration-none" to="/customers" onClick={() => setMenuOpen(false)}>Customers</Link>
-            </li>
-            <li>
-              <Link className="text-dark text-decoration-none" to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
-            </li>
+          {/* Desktop Menu */}
+          <ul className="hidden lg:flex gap-8 font-medium">
+            <li><Link to="/" className="hover:text-orange-500">Home</Link></li>
+            <li><Link to="/about" className="hover:text-orange-500">About Us</Link></li>
+            <li><Link to="/services" className="hover:text-orange-500">Services</Link></li>
+            <li><Link to="/customers" className="hover:text-orange-500">Customers</Link></li>
+            <li><Link to="/contact" className="hover:text-orange-500">Contact</Link></li>
           </ul>
         </div>
-      )}
+
+        {/* Mobile Dropdown */}
+        {menuOpen && (
+          <div className="lg:hidden bg-white shadow-md px-4 py-3 space-y-3">
+            <Link to="/" onClick={() => setMenuOpen(false)} className="block text-gray-700 hover:text-orange-500">Home</Link>
+            <Link to="/about" onClick={() => setMenuOpen(false)} className="block text-gray-700 hover:text-orange-500">About Us</Link>
+            <Link to="/services" onClick={() => setMenuOpen(false)} className="block text-gray-700 hover:text-orange-500">Services</Link>
+            <Link to="/customers" onClick={() => setMenuOpen(false)} className="block text-gray-700 hover:text-orange-500">Customers</Link>
+            <Link to="/contact" onClick={() => setMenuOpen(false)} className="block text-gray-700 hover:text-orange-500">Contact</Link>
+          </div>
+        )}
+      </nav>
     </>
   );
 };
