@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../assets/Logo.png"
+import Logo from "../assets/Logo.png";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,18 +11,17 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
           
           {/* Logo */}
-          <Link to="/" className=" flex items-center text-2xl font-bold gap-2">
-          <img src={Logo} alt="Logo" className="w-10 h-10 object-contain" />
+          <Link to="/" className="flex items-center text-2xl font-bold gap-2">
+            <img src={Logo} alt="Logo" className="w-10 h-10 object-contain" />
             <span>
-               <span className="text-orange-500">Ma</span>
-            <span className="text-brown-700">veen</span>
+              <span className="text-[#0056A6]">Ma</span>
+              <span className="text-gray-800">veen</span>
             </span>
-           
           </Link>
 
           {/* Mobile menu button */}
           <button
-            className="lg:hidden p-2 rounded-md text-gray-700 focus:outline-none focus:ring-2 focus:ring-orange-400"
+            className="lg:hidden p-2 rounded-md text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#0056A6]"
             onClick={() => setMenuOpen(!menuOpen)}
           >
             {/* Hamburger icon */}
@@ -51,23 +50,28 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <ul className="hidden lg:flex gap-8 font-medium">
-            <li><Link to="/" className="hover:text-orange-500">Home</Link></li>
-            <li><Link to="/about" className="hover:text-orange-500">About Us</Link></li>
-            <li><Link to="/services" className="hover:text-orange-500">Services</Link></li>
-            <li><Link to="/customers" className="hover:text-orange-500">Customers</Link></li>
-            <li><Link to="/contact" className="hover:text-orange-500">Contact</Link></li>
+            <li><Link to="/" className="hover:text-[#0056A6]">Home</Link></li>
+            <li><Link to="/about" className="hover:text-[#0056A6]">About Us</Link></li>
+            <li><Link to="/services" className="hover:text-[#0056A6]">Services</Link></li>
+            {/* <li><Link to="/customers" className="hover:text-[#0056A6]">Customers</Link></li> */}
+            <li><Link to="/contact" className="hover:text-[#0056A6]">Contact</Link></li>
           </ul>
         </div>
 
         {/* Mobile Dropdown */}
         {menuOpen && (
+          // <div className="lg:hidden px-4 pb-4">
+    // <div className="bg-white shadow-md rounded-lg p-4 space-y-3">
           <div className="lg:hidden bg-white shadow-md px-4 py-3 space-y-3">
-            <Link to="/" onClick={() => setMenuOpen(false)} className="block text-gray-700 hover:text-orange-500">Home</Link>
-            <Link to="/about" onClick={() => setMenuOpen(false)} className="block text-gray-700 hover:text-orange-500">About Us</Link>
-            <Link to="/services" onClick={() => setMenuOpen(false)} className="block text-gray-700 hover:text-orange-500">Services</Link>
-            <Link to="/customers" onClick={() => setMenuOpen(false)} className="block text-gray-700 hover:text-orange-500">Customers</Link>
-            <Link to="/contact" onClick={() => setMenuOpen(false)} className="block text-gray-700 hover:text-orange-500">Contact</Link>
+            <Link to="/" onClick={() => setMenuOpen(false)} className="block text-gray-700 hover:text-[#0056A6]">Home</Link>
+            <Link to="/about" onClick={() => setMenuOpen(false)} className="block text-gray-700 hover:text-[#0056A6]">About Us</Link>
+            <Link to="/services" onClick={() => setMenuOpen(false)} className="block text-gray-700 hover:text-[#0056A6]">Services</Link>
+            <Link to="/customers" onClick={() => setMenuOpen(false)} className="block text-gray-700 hover:text-[#0056A6]">Customers</Link>
+            <Link to="/contact" onClick={() => setMenuOpen(false)} className="block text-gray-700 hover:text-[#0056A6]">Contact</Link>
           </div>
+          // </div>
+          // </div>
+
         )}
       </nav>
     </>

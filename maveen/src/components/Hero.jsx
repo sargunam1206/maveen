@@ -10,13 +10,13 @@ const Hero = () => (
         
         {/* Left: Text */}
         <div className="flex-1 text-center lg:text-left">
-          <h1 className="text-4xl lg:text-5xl font-bold text-primary mb-4">
-            MAVEEN TEAM
+          <h1 className="text-3xl lg:text-4xl font-bold text-[#0056A6] mb-4">
+             Excellence to Execute & Care
           </h1>
 
-          <p className="text-lg text-gray-600 mb-3">
+          {/* <p className="text-lg text-gray-600 mb-3">
             Excellence to Execute & Care
-          </p>
+          </p> */}
           <p className="text-gray-500 mb-6">
             Advisory Services & Business Process Improvement. <br />
             We help organizations achieve performance through specialized training,
@@ -26,13 +26,13 @@ const Hero = () => (
           <div className="flex justify-center lg:justify-start gap-4">
             <Link
               to="/about"
-              className="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded-lg shadow-md"
+              className="bg-[#0056A6] hover:bg-[#004080] text-white px-5 py-2 rounded-lg shadow-md"
             >
               More
             </Link>
             <Link
               to="/contact"
-              className="border border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white px-5 py-2 rounded-lg"
+              className="border border-[#0056A6] text-[#0056A6] hover:bg-[#0056A6] hover:text-white px-5 py-2 rounded-lg"
             >
               Contact Us
             </Link>
@@ -49,7 +49,7 @@ const Hero = () => (
         </div>
       </div>
     </section>
-    <About />
+    {/* <About /> */}
   </>
 );
 
