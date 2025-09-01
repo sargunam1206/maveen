@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import HeroImg from "../assets/hero.jpg"; // Replace with your image path
+import About from "../pages/About"
 
 const Hero = () => (
+  <>
   <section className="bg-gray-50 py-16">
     <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-10 px-6">
       
@@ -11,7 +13,8 @@ const Hero = () => (
         <h1 className="text-4xl lg:text-5xl font-bold text-primary mb-4">
           MAVEEN TEAM
         </h1>
-        <h2 className="text-sky-600">test</h2>
+        <div className="bg-primary text-white p-4">Test Primary</div>
+
         <p className="text-lg text-gray-600 mb-3">
           Excellence to Execute & Care
         </p>
@@ -47,6 +50,8 @@ const Hero = () => (
       </div>
     </div>
   </section>
+  <About/>
+  </>
 );
 
 export default Hero;
