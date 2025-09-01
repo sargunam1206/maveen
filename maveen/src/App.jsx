@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage"; // adjust path if needed
 import About from './pages/About'
 import Footer from "./components/Footer";
+import Contact from "./pages/Contact";
 
 // Simple pages
 // const Home = () => <h1 className="p-4">🏠 Welcome to Home</h1>;
@@ -24,7 +25,7 @@ function App() {
           <Route path="/about" element={<About />} />
           {/* <Route path="/services" element={<Services />} /> */}
           {/* <Route path="/customers" element={<Customers />} /> */}
-          {/* <Route path="/contact" element={<Contact />} /> */}
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
       
