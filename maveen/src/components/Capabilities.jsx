@@ -6,17 +6,17 @@ const Capabilities = () => {
   // Capability cards data
   const capabilities = [
     {
-      icon: <Workflow className="w-10 h-10 text-[#0056A6]" />,
+      icon: <Workflow className="w-10 h-10 text-[#D62828]" />,
       title: "Business Process Improvement",
       description: "Streamlining processes to enhance efficiency and effectiveness.",
     },
     {
-      icon: <ShieldCheck className="w-10 h-10 text-[#0056A6]" />,
+      icon: <ShieldCheck className="w-10 h-10 text-[#D62828]" />,
       title: "Quality Improvements",
       description: "Driving excellence by improving product and service quality.",
     },
     {
-      icon: <ClipboardList className="w-10 h-10 text-[#0056A6]" />,
+      icon: <ClipboardList className="w-10 h-10 text-[#D62828]" />,
       title: "Daily Work Management",
       description: "Structured systems to manage day-to-day operations effectively.",
     },
@@ -56,7 +56,7 @@ const Capabilities = () => {
         <div className="mt-10">
           <a
             href="/services"
-            className="text-[#0056A6] font-medium hover:underline inline-flex items-center"
+            className="text-[#D62828] font-medium hover:underline inline-flex items-center"
           >
             View all Services →
           </a>

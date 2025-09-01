@@ -9,14 +9,14 @@ const Stats = () => {
         
         {/* Clients */}
         <div className="flex flex-col items-center">
-          <UserGroupIcon className="w-10 h-10 text-[#0056A6] mb-3" />
+          <UserGroupIcon className="w-10 h-10 text-[#D62828] mb-3" />
           <h3 className="text-2xl font-bold text-gray-800">14+</h3>
           <p className="text-gray-600">Clients</p>
         </div>
 
          {/* Services */}
         <div className="flex flex-col items-center">
-          <BriefcaseIcon className="w-10 h-10 text-[#0056A6] mb-3" />
+          <BriefcaseIcon className="w-10 h-10 text-[#D62828] mb-3" />
           <h3 className="text-2xl font-bold text-gray-800">10+</h3>
           <p className="text-gray-600">Total Services</p>
         </div>
@@ -24,7 +24,7 @@ const Stats = () => {
 
         {/* Ratings */}
         <div className="flex flex-col items-center">
-          <StarIcon className="w-10 h-10 text-[#0056A6] mb-3" />
+          <StarIcon className="w-10 h-10 text-[#D62828] mb-3" />
           <h3 className="text-2xl font-bold text-gray-800">10+</h3>
           <p className="text-gray-600">Five Star Ratings</p>
         </div>

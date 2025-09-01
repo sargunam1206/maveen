@@ -1,51 +1,297 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faUsers,
+  faCheckCircle,
+  faDollarSign,
+  faBolt,
+} from "@fortawesome/free-solid-svg-icons";
 
-const About = () => (
-  <section className="container py-5">
-    <h2 className="fw-bold text-center mb-4">About Us</h2>
+const About = () => {
+  return (
+    <>
+      <div className="border-b border-gray-400">
+        <section className=" border-gray-700 flex flex-col justify-center items-center py-10 px-6 text-center">
+          <h1 className="text-4xl text-[#0050A0] font-bold mb-4">
+            About Maven Yanim
+          </h1>
+ <p className="p-6 w-full max-w-3xl  bg-white rounded-lg font-medium text-sm sm:text-base md:text-lg text-center sm:text-left">            
+            Professional consulting firm delivering specialized services across
+            multiple industries through Operational Excellence.
+          </p>
+        </section>
+        {/* <div className=" flex flex-col justify-center items-center py-10 px-6 bg-gray-200">
+          <h1 className="text-4xl text-[#0050A0] font-bold mb-4 mt-5">
+            Who We are
+          </h1>
+          <p className="p-6 w-200 bg-white rounded-lg font-medium">
+            Maven Yanim is a professional consulting firm delivering specialized
+            services across{" "}
+            <span className="text-[#0050A0]">
+              Engineering, Automotive, Textile, Food, and Consumer Goods
+            </span>{" "}
+            industries. We focus on helping businesses implement World Class
+            Manufacturing Practices through Operational Excellence (OpEx)
+            projects.
+          </p>
+        </div>
+        <div className="flex flex-col justify-center items-center py-10 px-6">
+          <h1 className="text-4xl text-[#0050A0] font-bold mb-4 mt-5">
+            Our Mission
+          </h1>
+          <p className="bg-[#0050A0] text-white p-8 w-200 rounded-lg text-center font-medium">
+            To empower organizations to achieve sustainable growth by improving
+            efficiency, productivity, and quality.
+          </p>
+        </div>
+        <div className="flex flex-col justify-center items-center py-10 px-6 bg-gray-200">
+          <h1 className="text-[#0050A0] font-bold text-4xl mb-4 mt-5">
+            Our Team
+          </h1>
+          <div className="flex items-center gap-3 mb-4 bg-white rounded-lg p-6 w-200">
+            <FontAwesomeIcon
+              icon={faUsers}
+              className="text-[#D62828] text-2xl inline-black mr-2"
+            />
+            <p className="max-w-2xl text-gray-700 font-medium">
+              Our consultants bring extensive experience from{" "}
+              <span className="text-[#0050A0]">TUV-SUD South Asia</span> and
+              have successfully implemented OpEx projects for over{" "}
+              <span className="text-[#D62828]">40 industries since 2014.</span>{" "}
+              With a blend of global standards and local expertise, we ensure
+              impactful training, consulting, and process improvement
+            </p>
+          </div>
+        </div> */}
+        <div className="flex flex-col justify-center items-center py-10 px-6 bg-gray-200">
+  <h1 className="text-2xl sm:text-3xl md:text-4xl text-[#0050A0] font-bold mb-4 mt-5 text-center">
+    Who We Are
+  </h1>
+  <p className="p-6 w-full max-w-3xl bg-white rounded-lg font-medium text-sm sm:text-base md:text-lg text-center sm:text-left">
+    Maven Yanim is a professional consulting firm delivering specialized
+    services across{" "}
+    <span className="text-[#0050A0]">
+      Engineering, Automotive, Textile, Food, and Consumer Goods
+    </span>{" "}
+    industries. We focus on helping businesses implement World Class
+    Manufacturing Practices through Operational Excellence (OpEx) projects.
+  </p>
+</div>
 
-    <h4 className="fw-bold">Who We Are</h4>
-    <p>
-      Maveen Team is a professional consulting firm delivering specialized
-      services across Engineering, Automotive, Textile, Food, and Consumer Goods
-      industries. We focus on helping businesses implement <em>Best-in-Class (BIC)</em>
-      practices through Operational Excellence (OPEX) projects.
-    </p>
+<div className="flex flex-col justify-center items-center py-10 px-6">
+  <h1 className="text-2xl sm:text-3xl md:text-4xl text-[#0050A0] font-bold mb-4 mt-5 text-center">
+    Our Mission
+  </h1>
+  <p className="bg-[#0050A0] text-white p-6 sm:p-8 w-full max-w-3xl rounded-lg text-sm sm:text-base md:text-lg text-center font-medium">
+    To empower organizations to achieve sustainable growth by improving
+    efficiency, productivity, and quality.
+  </p>
+</div>
 
-    <h4 className="fw-bold mt-4">Our Mission</h4>
-    <p>
-      To empower organizations to achieve sustainable growth by improving
-      efficiency, productivity, and quality.
-    </p>
-
-    <h4 className="fw-bold mt-4">Our Team</h4>
-    <p>
-      Our consultants bring extensive experience from TÜV SÜD South Asia and
-      have successfully implemented OPEX projects for top industries since 2010.
-      With a blend of global standards and local expertise, we ensure impactful
+<div className="flex flex-col justify-center items-center py-10 px-6 bg-gray-200">
+  <h1 className="text-2xl sm:text-3xl md:text-4xl text-[#0050A0] font-bold mb-4 mt-5 text-center">
+    Our Team
+  </h1>
+  <div className="flex flex-col sm:flex-row items-center gap-3 mb-4 bg-white rounded-lg p-6 w-full max-w-3xl">
+    <FontAwesomeIcon
+      icon={faUsers}
+      className="text-[#D62828] text-3xl sm:text-4xl mb-3 sm:mb-0"
+    />
+    <p className="text-gray-700 font-medium text-sm sm:text-base md:text-lg text-center sm:text-left">
+      Our consultants bring extensive experience from{" "}
+      <span className="text-[#0050A0]">TUV-SUD South Asia</span> and have
+      successfully implemented OpEx projects for over{" "}
+      <span className="text-[#D62828]">40 industries since 2014.</span> With a
+      blend of global standards and local expertise, we ensure impactful
       training, consulting, and process improvement.
     </p>
+  </div>
+</div>
 
-    <h4 className="fw-bold mt-4">Operational Excellence (OPEX)</h4>
-    <ul>
-      <li>Improving quality and delivery</li>
-      <li>Reducing costs and non-value-adding steps</li>
-      <li>Strengthening customer satisfaction</li>
-      <li>Optimizing processes with fewer resources</li>
-    </ul>
+        <div className="flex flex-col justify-center items-center">
+          <h1 className="text-[#0050A0] font-bold text-4xl mb-5 mt-4">
+            Operational Excellence (OpEx)
+          </h1>
+          <p className="p-3">
+            We help businesses implement continuous improvement across all
+            aspects of operations by:
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 py-10 px-15">
+            {/* Card 1 */}
+            <div className="p-6 bg-white rounded-lg shadow-md border-t-4 border-red-600 text-center">
+              <div className="flex justify-center mb-4">
+                <div className="w-12 h-12 flex items-center justify-center bg-red-600 rounded-md">
+                  <FontAwesomeIcon
+                    icon={faCheckCircle}
+                    className="text-white text-2xl"
+                  />
+                </div>
+              </div>
+              <h3 className="text-lg font-bold text-[#0050A0]">
+                Quality & Delivery
+              </h3>
+              <p className="text-gray-600 mt-2">
+                Improving quality standards and delivery performance
+              </p>
+            </div>
 
-    <h4 className="fw-bold mt-4">Methodology</h4>
-    <ul>
-      <li>Diagnostic study & Gap assessment</li>
-      <li>5S Training & Implementation</li>
-      <li>MIS Development</li>
-      <li>Quality Management System Improvement</li>
-      <li>TPM Implementation</li>
-      <li>Productivity & Inventory Management</li>
-      <li>Kaizen & Lean Practices</li>
-      <li>Human Resource Development</li>
-    </ul>
-  </section>
-);
+            {/* Card 2 */}
+            <div className="p-6 bg-white rounded-lg shadow-md border-t-4 border-red-600 text-center">
+              <div className="flex justify-center mb-4">
+                <div className="w-12 h-12 flex items-center justify-center bg-red-600 rounded-md">
+                  <FontAwesomeIcon
+                    icon={faDollarSign}
+                    className="text-white text-2xl"
+                  />
+                </div>
+              </div>
+              <h3 className="text-lg font-bold text-[#0050A0]">
+                Cost Reduction
+              </h3>
+              <p className="text-gray-600 mt-2">
+                Reducing costs and eliminating non-value-adding steps
+              </p>
+            </div>
+
+            {/* Card 3 */}
+            <div className="p-6 bg-white rounded-lg shadow-md border-t-4 border-red-600 text-center">
+              <div className="flex justify-center mb-4">
+                <div className="w-12 h-12 flex items-center justify-center bg-red-600 rounded-md">
+                  <FontAwesomeIcon
+                    icon={faUsers}
+                    className="text-white text-2xl"
+                  />
+                </div>
+              </div>
+              <h3 className="text-lg font-bold text-[#0050A0]">
+                Customer Relations
+              </h3>
+              <p className="text-gray-600 mt-2">
+                Strengthening customer relationships and satisfaction
+              </p>
+            </div>
+
+            {/* Card 4 */}
+            <div className="p-6 bg-white rounded-lg shadow-md border-t-4 border-red-600 text-center">
+              <div className="flex justify-center mb-4">
+                <div className="w-12 h-12 flex items-center justify-center bg-red-600 rounded-md">
+                  <FontAwesomeIcon
+                    icon={faBolt}
+                    className="text-white text-2xl"
+                  />
+                </div>
+              </div>
+              <h3 className="text-lg font-bold text-[#0050A0]">
+                Process Optimization
+              </h3>
+              <p className="text-gray-600 mt-2">
+                Optimizing processes with fewer resources
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col justify-center items-center bg-gray-200">
+          <h1 className="text-4xl text-[#0050A0] mb-5 mt-6 font-bold">
+            Our Methodology
+          </h1>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6  py-10 ">
+            <div className="  bg-white p-3 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:shadow-lg">
+              <div className="text-white  rounded-lg w-15 h-15 bg-[#0050A0] flex flex-col justify-center itmes-center">
+                <p className="text-center text-2xl font-bold">1</p>
+              </div>
+              <h3 className="text-[#0050A0] py-3 font-bold">Diagnosis Study</h3>
+              <p className="py-2">Gap assessmen</p>
+            </div>
+            <div className="  bg-white p-3 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:shadow-lg">
+              <div className="text-white  rounded-lg w-15 h-15 bg-[#0050A0] flex flex-col justify-center itmes-center">
+                <p className="text-center text-2xl font-bold">2</p>
+              </div>
+              <h3 className="text-[#0050A0] py-3 font-bold">5S Training</h3>
+              <p className="py-2">Implementation</p>
+            </div>
+
+            <div className="  bg-white p-3 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:shadow-lg">
+              <div className="text-white  rounded-lg w-15 h-15 bg-[#0050A0] flex flex-col justify-center itmes-center">
+                <p className="text-center text-2xl font-bold">3</p>
+              </div>
+              <h3 className="text-[#0050A0] py-3 font-bold">MIS Development</h3>
+              <p className="py-2">Management Information Systems</p>
+            </div>
+            <div className="  bg-white p-3 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:shadow-lg">
+              <div className="text-white  rounded-lg w-15 h-15 bg-[#0050A0] flex flex-col justify-center itmes-center">
+                <p className="text-center text-2xl font-bold">4</p>
+              </div>
+              <h3 className="text-[#0050A0] py-3 font-bold">Quality Management</h3>
+              <p className="py-2">System Improvement</p>
+            </div>
+            <div className="  bg-white p-3 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:shadow-lg">
+              <div className="text-white  rounded-lg w-15 h-15 bg-[#0050A0] flex flex-col justify-center itmes-center">
+                <p className="text-center text-2xl font-bold">5</p>
+              </div>
+              <h3 className="text-[#0050A0] py-3 font-bold">TPM Implementation</h3>
+              <p className="py-2">Total Productive Maintenance</p>
+            </div>
+            <div className=" bg-white p-3 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:shadow-lg">
+              <div className="text-white  rounded-lg w-15 h-15 bg-[#0050A0] flex flex-col justify-center itmes-center">
+                <p className="text-center text-2xl font-bold">6</p>
+              </div>
+              <h3 className="text-[#0050A0] py-3 font-bold">Productivity Management</h3>
+              <p className="py-2">Inventory Management</p>
+            </div>
+            <div className="  bg-white p-3 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:shadow-lg">
+              <div className="text-white  rounded-lg w-15 h-15 bg-[#0050A0] flex flex-col justify-center itmes-center">
+                <p className="text-center text-2xl font-bold">7</p>
+              </div>
+              <h3 className="text-[#0050A0] py-3 font-bold">Kaizen & Lean</h3>
+              <p className="py-2">Practices</p>
+            </div>
+            <div className=" bg-white p-3 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:shadow-lg">
+              <div className="text-white  rounded-lg w-15 h-15 bg-[#0050A0] flex flex-col justify-center itmes-center">
+                <p className="text-center text-2xl font-bold">8</p>
+              </div>
+              <h3 className="text-[#0050A0] py-3 font-bold">HR Development</h3>
+              <p className="py-2">Human Resource Development</p>
+            </div>
+          </div>
+        </div>
+        {/* <div className="flex flex-col justify-center items-center bg-[#0050A0] text-white">
+          <h1 className="text-4xl font-bold mb-4 mt-4">
+            Ready to Transform Your Operations?
+          </h1>
+          <p className="text-2xl w-200 text-center p-5 ">
+            Let's discuss how Maven Yanim can help your organization achieve
+            operational excellence and sustainable growth.
+          </p>
+          <div className="flex space-x-4 mb-5">
+            <button className="bg-red-600 text-white font-semibold px-6 py-3 rounded-md shadow-md hover:bg-red-700 transition">
+              Get Started
+            </button>
+            <button className="border-2 border-white text-white font-semibold px-6 py-3 rounded-md hover:bg-white hover:text-blue-700 transition">
+              Learn More
+            </button>
+          </div>
+        </div> */}
+        <div className="flex flex-col justify-center items-center bg-[#0050A0] text-white px-6">
+  <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 mt-4 text-center">
+    Ready to Transform Your Operations?
+  </h1>
+  <p className="text-base sm:text-lg md:text-2xl w-full max-w-2xl text-center p-3">
+    Let's discuss how Maven Yanim can help your organization achieve
+    operational excellence and sustainable growth.
+  </p>
+  <div className="flex flex-col sm:flex-row gap-4 mb-6 mt-3">
+    <button className="bg-red-600 text-white font-semibold px-6 py-3 rounded-md shadow-md hover:bg-red-700 transition">
+      Get Started
+    </button>
+    <button className="border-2 border-white text-white font-semibold px-6 py-3 rounded-md hover:bg-white hover:text-blue-700 transition">
+      Learn More
+    </button>
+  </div>
+</div>
+
+      </div>
+    </>
+  );
+};
 
 export default About;

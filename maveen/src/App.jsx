@@ -3,16 +3,22 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage"; // adjust path if needed
 import Services from "./pages/Services"; 
+import About from './pages/About'
+import Footer from "./components/Footer";
+import Contact from "./pages/Contact";
+
+
 // Simple pages
 // const Home = () => <h1 className="p-4">🏠 Welcome to Home</h1>;
-const About = () => <h1 className="p-4">ℹ️ About Us</h1>;
+// const About = () => <h1 className="p-4">ℹ️ About Us</h1>;
 // const Services = () => <h1 className="p-4">🛠 Services</h1>;
 // const Customers = () => <h1 className="p-4">👥 Customers</h1>;
-const Contact = () => <h1 className="p-4">📞 Contact</h1>;
+// const Contact = () => <h1 className="p-4">📞 Contact</h1>;
 
 
 function App() {
   return (
+    <>
     <Router>
       <Navbar />
       <main>
@@ -26,6 +32,9 @@ function App() {
       </main>
       
     </Router>
+    <Footer/>
+
+    </>
   );
 }
 

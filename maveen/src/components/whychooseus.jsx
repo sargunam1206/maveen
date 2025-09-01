@@ -11,34 +11,34 @@ import {
 const WhyChooseUs = () => {
   const reasons = [
     {
-      icon: <Award className="w-10 h-10 text-[#0056A6]" />,
+      icon: <Award className="w-10 h-10 text-[#D62828]" />,
       title: "Reputation",
       description: "Proven professional competence with a strong track record.",
     },
     {
-      icon: <Workflow className="w-10 h-10 text-[#0056A6]" />,
+      icon: <Workflow className="w-10 h-10 text-[#D62828]" />,
       title: "Process Partner",
       description:
         "Your end-to-end partner for quality and continuous improvement.",
     },
     {
-      icon: <Users className="w-10 h-10 text-[#0056A6]" />,
+      icon: <Users className="w-10 h-10 text-[#D62828]" />,
       title: "Expert Trainers",
       description:
         "Experienced consultants with hands-on industry expertise.",
     },
     {
-      icon: <Clock className="w-10 h-10 text-[#0056A6]" />,
+      icon: <Clock className="w-10 h-10 text-[#D62828]" />,
       title: "On-Time Delivery",
       description: "Projects executed within committed timelines.",
     },
     {
-      icon: <ShieldCheck className="w-10 h-10 text-[#0056A6]" />,
+      icon: <ShieldCheck className="w-10 h-10 text-[#D62828]" />,
       title: "Trust & Fairness",
       description: "Integrity and fairness maintained throughout the process.",
     },
     {
-      icon: <GraduationCap className="w-10 h-10 text-[#0056A6]" />,
+      icon: <GraduationCap className="w-10 h-10 text-[#D62828]" />,
       title: "Qualified Consultants",
       description:
         "Certified Lean Six Sigma professionals with cross-industry expertise.",
@@ -53,7 +53,7 @@ const WhyChooseUs = () => {
           Why Choose Us
         </h2>
         <p className="text-gray-600 mb-12">
-          The <span className="text-[#0056A6] font-semibold">Maven Yanim Advantage</span>
+          The <span className="text-[#D62828] font-semibold">Maven Yanim Advantage</span>
         </p>
 
         {/* Grid */}

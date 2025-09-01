@@ -26,7 +26,7 @@ const Hero = () => (
           <div className="flex justify-center lg:justify-start gap-4">
             <Link
               to="/about"
-              className="bg-[#0056A6] hover:bg-[#004080] text-white px-5 py-2 rounded-lg shadow-md"
+              className="bg-[#D62828] hover:bg-[#004080] text-white px-5 py-2 rounded-lg shadow-md"
             >
               More
             </Link>

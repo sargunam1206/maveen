@@ -8,10 +8,18 @@ import Serviceswrk from "../pages/Serviceswrk";
 const Services = () => {
   return (
     <>
+    <section className=" border-gray-700 flex flex-col justify-center items-center py-10 px-6 text-center">
+          <h1 className="text-4xl text-[#0050A0] font-bold mb-4">
+            Services
+          </h1>
+ <p className="p-6 w-full max-w-3xl  bg-white rounded-lg font-semibold text-sm sm:text-base md:text-lg text-center sm:text-left">            
+           Our services are crafted with your success in mind, ensuring innovative solutions that adapt to your unique challenges.
+          </p>
+        </section>
     <section className="bg-gray-50 py-16">
       <div className="max-w-8xl mx-auto text-center px-6">
         {/* Section Title */}
-        <h2 className="text-3xl font-bold text-gray-800 mb-4">
+        <h2 className="text-3xl text-[#0050A0] font-bold mb-4">
           Business Process Improvement
         </h2>
         {/* <p className="text-gray-600 mb-12">
@@ -26,7 +34,7 @@ const Services = () => {
             whileTap={{ scale: 0.98 }}
             className=" bg-white shadow-md rounded-2xl p-8 text-left hover:shadow-xl transition relative group"
           >
-            <Workflow className="w-12 h-12 text-[#0056A6] mb-4 group-hover:text-blue-700 transition-colors" />
+            <Workflow className="w-12 h-12 text-[#D62828] mb-4 group-hover:text-red-700 transition-colors" />
             <h3 className="text-xl font-semibold text-[#0056A6] mb-2">
              Lean Manufacturing
             </h3>
@@ -61,7 +69,7 @@ const Services = () => {
             whileTap={{ scale: 0.98 }}
             className="bg-white shadow-md rounded-2xl p-8 text-left hover:shadow-xl transition relative group"
           >
-            <ShieldCheck className="w-12 h-12 text-[#0056A6] mb-4 group-hover:text-blue-700 transition-colors" />
+            <ShieldCheck className="w-12 h-12 text-[#D62828] mb-4 group-hover:text-red-700 transition-colors" />
             <h3 className="text-xl font-semibold text-[#0056A6] mb-2">
               Total Quality Management
             </h3>
@@ -88,7 +96,7 @@ const Services = () => {
             whileTap={{ scale: 0.98 }}
             className="bg-white shadow-md rounded-2xl p-8 text-left hover:shadow-xl transition relative group"
           >
-            <ClipboardList className="w-12 h-12 text-[#0056A6] mb-4 group-hover:text-blue-700 transition-colors" />
+            <ClipboardList className="w-12 h-12 text-[#D62828] mb-4 group-hover:text-red-700 transition-colors" />
             <h3 className="text-xl font-semibold text-[#0056A6] mb-2">
               Six Sigma
             </h3>
@@ -127,7 +135,7 @@ const Services = () => {
     <section className="bg-white py-16">
       <div className="max-w-8xl mx-auto text-center px-6">
         {/* Section Title */}
-        <h2 className="text-3xl font-bold text-gray-800 mb-4">
+        <h2 className="text-3xl font-bold text-[#0050A0] mb-4">
           Quality Improvement
         </h2>
         <p className="text-gray-600 mb-12">
@@ -142,7 +150,7 @@ const Services = () => {
             whileTap={{ scale: 0.98 }}
             className="bg-gray-100 shadow-md rounded-2xl p-8 text-left hover:shadow-xl transition relative group"
           >
-            <Workflow className="w-12 h-12 text-[#0056A6] mb-4 group-hover:text-blue-700 transition-colors" />
+            <Workflow className="w-12 h-12 text-[#D62828] mb-4 group-hover:text-red-700 transition-colors" />
             <h3 className="text-xl font-semibold text-[#0056A6] mb-2">
              Strategic quality
             </h3>
@@ -175,7 +183,7 @@ const Services = () => {
             whileTap={{ scale: 0.98 }}
             className="bg-gray-100 shadow-md rounded-2xl p-8 text-left hover:shadow-xl transition relative group"
           >
-            <ShieldCheck className="w-12 h-12 text-[#0056A6] mb-4 group-hover:text-blue-700 transition-colors" />
+            <ShieldCheck className="w-12 h-12 text-[#D62828] mb-4 group-hover:text-red-700 transition-colors" />
             <h3 className="text-xl font-semibold text-[#0056A6] mb-2">
               7 QC Tools
             </h3>
@@ -224,7 +232,7 @@ const Services = () => {
         <section className="bg-gray-50 py-16">
           <div className="max-w-8xl mx-auto text-center px-6">
             {/* Section Title */}
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">
+            <h2 className="text-3xl font-bold text-[#0050A0] mb-4">
               System Improvement
             </h2>
             <p className="text-gray-600 mb-12">
@@ -239,7 +247,7 @@ const Services = () => {
                 whileTap={{ scale: 0.98 }}
                 className="bg-white shadow-md rounded-2xl p-8 text-left hover:shadow-xl transition relative group"
               >
-                <Workflow className="w-12 h-12 text-[#0056A6] mb-4 group-hover:text-blue-700 transition-colors" />
+                <Workflow className="w-12 h-12 text-[#D62828] mb-4 group-hover:text-red-700 transition-colors" />
                 <h3 className="text-xl font-semibold text-[#0056A6] mb-2">
                 Store Management System
                 </h3>
@@ -280,7 +288,7 @@ const Services = () => {
                 whileTap={{ scale: 0.98 }}
                 className="bg-white shadow-md rounded-2xl p-8 text-left hover:shadow-xl transition relative group"
               >
-                <ShieldCheck className="w-12 h-12 text-[#0056A6] mb-4 group-hover:text-blue-700 transition-colors" />
+                <ShieldCheck className="w-12 h-12 text-[#D62828] mb-4 group-hover:text-red-700 transition-colors" />
                 <h3 className="text-xl font-semibold text-[#0056A6] mb-2">
                   Total Productive Maintenance System
                 </h3>
@@ -333,7 +341,7 @@ const Services = () => {
     <section className="bg-white py-16">
       <div className="max-w-8xl mx-auto text-center px-6">
         {/* Section Title */}
-        <h2 className="text-3xl font-bold text-gray-800 mb-4">
+        <h2 className="text-3xl font-bold text-[#0050A0] mb-4">
           Workplace Improvement
         </h2>
         <p className="text-gray-600 mb-12">
@@ -348,7 +356,7 @@ const Services = () => {
             whileTap={{ scale: 0.98 }}
             className="bg-gray-100 shadow-md rounded-2xl p-8 text-left hover:shadow-xl transition relative group"
           >
-            <Workflow className="w-12 h-12 text-[#0056A6] mb-4 group-hover:text-blue-700 transition-colors" />
+            <Workflow className="w-12 h-12 text-[#D62828] mb-4 group-hover:text-red-700 transition-colors" />
             <h3 className="text-xl font-semibold text-[#0056A6] mb-2">
              Manufacturing Layouts
             </h3>
@@ -388,7 +396,7 @@ Improvement</p>
             whileTap={{ scale: 0.98 }}
             className="bg-gray-100 shadow-md rounded-2xl p-8 text-left hover:shadow-xl transition relative group"
           >
-            <ShieldCheck className="w-12 h-12 text-[#0056A6] mb-4 group-hover:text-blue-700 transition-colors" />
+            <ShieldCheck className="w-12 h-12 text-[#D62828] mb-4 group-hover:text-red-700 transition-colors" />
             <h3 className="text-xl font-semibold text-[#0056A6] mb-2">
               7 QC Tools
             </h3>
@@ -422,10 +430,11 @@ Improvement</p>
       </div>
     </section>
 
+            {/* Daily Work & Cost Management  */}
         <section className="bg-gray-50 py-16">
       <div className="max-w-8xl mx-auto text-center px-6">
         {/* Section Title */}
-        <h2 className="text-3xl font-bold text-gray-800 mb-4">
+        <h2 className="text-3xl font-bold text-[#0050A0] mb-4">
         Daily Work & Cost management
         </h2>
         <p className="text-gray-600 mb-12">
@@ -440,7 +449,7 @@ Improvement</p>
             whileTap={{ scale: 0.98 }}
             className="bg-white shadow-md rounded-2xl p-8 text-left hover:shadow-xl transition relative group"
           >
-            <Workflow className="w-12 h-12 text-[#0056A6] mb-4 group-hover:text-blue-700 transition-colors" />
+            <Workflow className="w-12 h-12 text-[#D62828] mb-4 group-hover:text-red-700 transition-colors" />
             <h3 className="text-xl font-semibold text-[#0056A6] mb-2">
             Daily work management and Sustenance
             </h3>
@@ -504,7 +513,7 @@ Improvement</p>
             whileTap={{ scale: 0.98 }}
             className="bg-white shadow-md rounded-2xl p-8 text-left hover:shadow-xl transition relative group"
           >
-            <ShieldCheck className="w-12 h-12 text-[#0056A6] mb-4 group-hover:text-blue-700 transition-colors" />
+            <ShieldCheck className="w-12 h-12 text-[#D62828] mb-4 group-hover:text-red-700 transition-colors" />
             <h3 className="text-xl font-semibold text-[#0056A6] mb-2">
            Cost management:
             </h3>
