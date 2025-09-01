@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../assets/Logo.png"
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,13 +10,9 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
           
           {/* Logo */}
-          <Link to="/" className=" flex items-center text-2xl font-bold gap-2">
-          <img src={Logo} alt="Logo" className="w-10 h-10 object-contain" />
-            <span>
-               <span className="text-orange-500">Ma</span>
+          <Link to="/" className="text-2xl font-bold">
+            <span className="text-orange-500">Ma</span>
             <span className="text-brown-700">veen</span>
-            </span>
-           
           </Link>
 
           {/* Mobile menu button */}
