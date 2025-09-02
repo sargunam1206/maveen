@@ -1,9 +1,15 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Logo from "../assets/Logo.png";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation(); // Get current path
+
+  // Check if a link is active
+  const isActive = (path) => {
+    return location.pathname === path;
+  };
 
   return (
     <>
@@ -14,8 +20,9 @@ const Navbar = () => {
           <Link to="/" className="flex items-center text-2xl font-bold gap-2">
             <img src={Logo} alt="Logo" className="w-10 h-10 object-contain" />
             <span>
-              <span className="text-[#0056A6]">Ma</span>
-              <span className="text-gray-800">ven</span>
+              <span className="text-[#D62828]">Ma</span>
+              <span className="text-[#0056A6]">ven</span>
+
             </span>
           </Link>
 
@@ -49,29 +56,74 @@ const Navbar = () => {
           </button>
 
           {/* Desktop Menu */}
-          <ul className="hidden lg:flex gap-8 font-medium">
-            <li><Link to="/" className="hover:text-[#0056A6]">Home</Link></li>
-            <li><Link to="/about" className="hover:text-[#0056A6]">About Us</Link></li>
-            <li><Link to="/services" className="hover:text-[#0056A6]">Services</Link></li>
-            {/* <li><Link to="/customers" className="hover:text-[#0056A6]">Customers</Link></li> */}
-            <li><Link to="/contact" className="hover:text-[#0056A6]">Contact</Link></li>
+          <ul className="hidden lg:flex gap-8 font-bold text-lg pr-20">
+            <li>
+              <Link 
+                to="/" 
+                className={`${isActive("/") ? "text-[#D62828] font-bold border-b-2 border-[#D62828]" : "text-[#0056A6]"} hover:text-[#D62828] transition-colors pb-1`}
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link 
+                to="/about" 
+                className={`${isActive("/about") ? "text-[#D62828] font-bold border-b-2 border-[#D62828]" : "text-[#0056A6]"} hover:text-[#D62828] transition-colors pb-1`}
+              >
+                About Us
+              </Link>
+            </li>
+            <li>
+              <Link 
+                to="/services" 
+                className={`${isActive("/services") ? "text-[#D62828] font-bold border-b-2 border-[#D62828]" : "text-[#0056A6]"} hover:text-[#D62828] transition-colors pb-1`}
+              >
+                Services
+              </Link>
+            </li>
+            <li>
+              <Link 
+                to="/contact" 
+                className={`${isActive("/contact") ? "text-[#D62828] font-bold border-b-2 border-[#D62828]" : "text-[#0056A6]"} hover:text-[#D62828] transition-colors pb-1`}
+              >
+                Contact
+              </Link>
+            </li>
           </ul>
         </div>
 
         {/* Mobile Dropdown */}
         {menuOpen && (
-          // <div className="lg:hidden px-4 pb-4">
-    // <div className="bg-white shadow-md rounded-lg p-4 space-y-3">
           <div className="lg:hidden bg-white shadow-md px-4 py-3 space-y-3">
-            <Link to="/" onClick={() => setMenuOpen(false)} className="block text-gray-700 hover:text-[#0056A6]">Home</Link>
-            <Link to="/about" onClick={() => setMenuOpen(false)} className="block text-gray-700 hover:text-[#0056A6]">About Us</Link>
-            <Link to="/services" onClick={() => setMenuOpen(false)} className="block text-gray-700 hover:text-[#0056A6]">Services</Link>
-            <Link to="/customers" onClick={() => setMenuOpen(false)} className="block text-gray-700 hover:text-[#0056A6]">Customers</Link>
-            <Link to="/contact" onClick={() => setMenuOpen(false)} className="block text-gray-700 hover:text-[#0056A6]">Contact</Link>
+            <Link 
+              to="/" 
+              onClick={() => setMenuOpen(false)} 
+              className={`block ${isActive("/") ? "text-[#D62828] font-bold" : "text-gray-700"} hover:text-[#0056A6] transition-colors`}
+            >
+              Home
+            </Link>
+            <Link 
+              to="/about" 
+              onClick={() => setMenuOpen(false)} 
+              className={`block ${isActive("/about") ? "text-[#D62828] font-bold" : "text-gray-700"} hover:text-[#0056A6] transition-colors`}
+            >
+              About Us
+            </Link>
+            <Link 
+              to="/services" 
+              onClick={() => setMenuOpen(false)} 
+              className={`block ${isActive("/services") ? "text-[#D62828] font-bold" : "text-gray-700"} hover:text-[#0056A6] transition-colors`}
+            >
+              Services
+            </Link>
+            <Link 
+              to="/contact" 
+              onClick={() => setMenuOpen(false)} 
+              className={`block ${isActive("/contact") ? "text-[#D62828] font-bold" : "text-gray-700"} hover:text-[#0056A6] transition-colors`}
+            >
+              Contact
+            </Link>
           </div>
-          // </div>
-          // </div>
-
         )}
       </nav>
     </>

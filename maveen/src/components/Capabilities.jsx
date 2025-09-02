@@ -24,7 +24,8 @@ const Capabilities = () => {
 
   return (
     <section className="bg-gray-50 py-16">
-      <div className="max-w-7xl mx-auto text-center px-6">
+      <div className="max-w-7xl mx-auto text-center px-6" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
         {/* Section Title */}
         <h2 className="text-4xl font-bold text-gray-800 mb-4">
           Our Core Services

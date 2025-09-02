@@ -77,7 +77,7 @@ const About = () => {
   return (
     <>
       <div className="border-b border-gray-400">
-        <section className=" border-gray-700 flex flex-col justify-center items-center py-10 px-6 text-center">
+        <section className=" border-gray-700 flex flex-col justify-center items-center py-10 px-6 text-center"  data-aos="zoom-in">
           <h1 className="text-4xl text-[#0050A0] font-bold mb-4">
             About Maven Yanim
           </h1>
@@ -114,7 +114,7 @@ const About = () => {
    <h1 className="text-2xl sm:text-3xl md:text-4xl text-center text-[#0050A0] font-bold mb-4">
       Our Mission
     </h1>
-<div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-10 px-6">
+<div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-10 px-6" data-aos="zoom-in">
   
   {/* Left Content */}
   <div className="flex flex-col justify-center">
@@ -126,7 +126,7 @@ const About = () => {
   </div>
 
   {/* Right Image */}
-  <div className="flex justify-center">
+  <div className="flex justify-center" >
     <img src={mission} alt="Our Mission" className="w-full max-w-md rounded-lg border-2 border-[#0050A0]  hover:shadow-md hover:scale-105 transition transform duration-300" />
   </div>
 </div>
@@ -137,7 +137,7 @@ const About = () => {
   </h1>
 
   {/* Main container */}
-  <div className="flex flex-col sm:flex-row items-center gap-6 bg-white rounded-lg p-6 w-full max-w-5xl">
+  <div className="flex flex-col sm:flex-row items-center gap-6 bg-white rounded-lg p-6 w-full max-w-5xl" data-aos="zoom-in">
 
     {/* Left Side: Image */}
     <div className="w-full sm:w-1/2  h-75 flex justify-center">
@@ -177,7 +177,8 @@ const About = () => {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 px-10 py-15">
           { lists.map((list,index)=>(
-            <div className="p-6 bg-white rounded-lg shadow-md border-t-4 border-red-600 flex flex-col justify-center items-center text-center hover:shadow-lg hover:scale-105  transition trnsform duration-300" key={index}>
+            <div className="p-6 bg-white rounded-lg shadow-md border-t-4 border-red-600 flex flex-col justify-center items-center text-center hover:shadow-lg hover:scale-105  transition trnsform duration-300" key={index}
+            data-aos="fade-up">
               <div className="w-15 h-15 bg-red-600 text-whit rounded-lg flex items-center justify-center">{list.icon}</div>
               <h3 className="text-[#0050A0] mb-3 font-bold">{list.title}</h3>
               <p className="mb-3">{list.description}</p>
@@ -192,7 +193,7 @@ const About = () => {
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-5">
             {cards.map((cards,index)=>(
-              <div className=" bg-white  rounded-lg p-4 hover:shadow-lg md:hover" key={index}>
+              <div className=" bg-white  rounded-lg p-4 hover:shadow-lg md:hover" key={index} data-aos="fade-down">
                 <div className="bg-[#0050A0] text-white font-bold p-4 rounded-lg w-15 h-15 flex justify-center items-center ">{cards.icon}</div>
                 <h3 className="text-[#0050A0] font-bold mb-3 mt-2">{cards.title}</h3>
                 <p className="mb-3">{cards.discription}</p>

@@ -9,7 +9,7 @@ const Hero = () => (
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-8 px-6">
         
         {/* Left: Text */}
-        <div className="flex-1 text-center lg:text-left">
+        <div className="flex-1 text-center lg:text-left" data-aos="zoom-in">
           <h1 className="text-3xl lg:text-4xl font-bold text-[#0056A6] mb-4">
              Excellence to Execute & Care
           </h1>
@@ -45,6 +45,7 @@ const Hero = () => (
             src={HeroImg}
             alt="Hero"
             className="rounded-lg shadow-lg max-w-lg w-full"
+            data-aos="fade-up"
           />
         </div>
       </div>
