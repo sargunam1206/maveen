@@ -6,7 +6,7 @@ import About from "../pages/About";
 const Hero = () => (
   <>
     <section className="bg-gray-50 py-16">
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-10 px-6">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-8 px-6">
         
         {/* Left: Text */}
         <div className="flex-1 text-center lg:text-left">
@@ -17,7 +17,7 @@ const Hero = () => (
           {/* <p className="text-lg text-gray-600 mb-3">
             Excellence to Execute & Care
           </p> */}
-          <p className="text-gray-500 mb-6">
+          <p className="text-lg mb-6">
             Advisory Services & Business Process Improvement. <br />
             We help organizations achieve performance through specialized training,
             consulting, and world-class operational excellence practices.
@@ -44,7 +44,7 @@ const Hero = () => (
           <img
             src={HeroImg}
             alt="Hero"
-            className="rounded-lg shadow-lg max-w-sm w-full"
+            className="rounded-lg shadow-lg max-w-lg w-full"
           />
         </div>
       </div>

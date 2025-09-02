@@ -15,7 +15,7 @@ const Navbar = () => {
             <img src={Logo} alt="Logo" className="w-10 h-10 object-contain" />
             <span>
               <span className="text-[#0056A6]">Ma</span>
-              <span className="text-gray-800">veen</span>
+              <span className="text-gray-800">ven</span>
             </span>
           </Link>
 

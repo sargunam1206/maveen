@@ -12,7 +12,7 @@ const Services = () => {
           <h1 className="text-4xl text-[#0050A0] font-bold mb-4">
             Services
           </h1>
- <p className="p-6 w-full max-w-3xl  bg-white rounded-lg font-semibold text-sm sm:text-base md:text-lg text-center sm:text-left">            
+ <p className="text-xl text-maven-gray max-w-3xl mx-auto leading-relaxed">            
            Our services are crafted with your success in mind, ensuring innovative solutions that adapt to your unique challenges.
           </p>
         </section>
