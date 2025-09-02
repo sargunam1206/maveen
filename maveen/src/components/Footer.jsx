@@ -1,25 +1,35 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faPhone, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
+import {
+  faEnvelope,
+  faPhone,
+  faMapMarkerAlt,
+  faArrowUp,
+} from "@fortawesome/free-solid-svg-icons";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
+  // Scroll to top function
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
-    <footer className="bg-[#0050A0] text-white py-10">
-      <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
-        
+    <footer className="bg-[#0050A0] text-white py-12 relative" data-aos="fade-up">
+      <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* Brand Info */}
         <div>
           <h2 className="flex items-center text-xl font-bold">
             <span className="bg-white text-blue-700 px-2 py-1 rounded-md mr-2">M</span>
             Maven Yanim
           </h2>
-          <p className="mt-3 text-gray-200">
+          <p className="mt-4 text-gray-200 leading-relaxed">
             Professional consulting for operational excellence across industries.
           </p>
         </div>
 
         {/* Services */}
         <div>
-          <h3 className="text-lg font-semibold mb-3">Services</h3>
+          <h3 className="text-lg font-semibold mb-4">Services</h3>
           <ul className="space-y-2 text-gray-200">
             <li>OpEx Consulting</li>
             <li>5S Implementation</li>
@@ -30,7 +40,7 @@ export default function Footer() {
 
         {/* Industries */}
         <div>
-          <h3 className="text-lg font-semibold mb-3">Industries</h3>
+          <h3 className="text-lg font-semibold mb-4">Industries</h3>
           <ul className="space-y-2 text-gray-200">
             <li>Engineering</li>
             <li>Automotive</li>
@@ -41,28 +51,56 @@ export default function Footer() {
 
         {/* Contact */}
         <div>
-          <h3 className="text-lg font-semibold mb-3">Contact</h3>
-          <ul className="space-y-3 text-gray-200">
-            <li className="flex items-center">
-              <FontAwesomeIcon icon={faEnvelope} className="mr-2 text-blue-200" />
-              info@mavenyanim.com
+          <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
+          <p className="text-gray-300 mb-4 text-sm">
+            MAVEN YANIM – Endeavor to Excellence
+          </p>
+          <ul className="space-y-4 text-gray-200 text-sm leading-relaxed">
+            <li className="flex items-start">
+              <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-3 text-red-500 mt-1" />
+              <span>
+                15, VKS Layout Extension, A. Sangampalayam, Pollachi, <br />
+                Coimbatore, Tamil Nadu, India - 642 002
+              </span>
             </li>
-            <li className="flex items-center">
-              <FontAwesomeIcon icon={faPhone} className="mr-2 text-red-400" />
-              +1 (555) 123-4567
+            <li className="flex items-start">
+              <FontAwesomeIcon icon={faPhone} className="mr-3 text-green-400 mt-1" />
+              <span>
+                +91 88704 59630 <br /> +91 98947 61332
+              </span>
             </li>
-            <li className="flex items-center">
-              <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2 text-red-500" />
-              Business District
+            <li className="flex items-start">
+              <FontAwesomeIcon icon={faEnvelope} className="mr-3 text-blue-200 mt-1" />
+              <span>
+                balak@mavenyanim.in <br /> saibalak@mavenyanim.in
+              </span>
             </li>
           </ul>
         </div>
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-gray-400 mt-10 pt-4 text-center text-gray-200 text-sm">
-        © 2024 Maven Yanim. All rights reserved.
+      <div className="border-t border-gray-400 mt-12 pt-4 text-center text-gray-200 text-sm">
+        © 2025 Maven Yanim. All rights reserved.
       </div>
+
+      {/* WhatsApp Floating Button */}
+      <a
+        href="https://wa.me/917339535472"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 left-6 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition"
+      >
+        <FontAwesomeIcon icon={faWhatsapp} className="text-2xl" />
+      </a>
+
+      {/* Scroll to Top Button */}
+      <button
+        onClick={scrollToTop}
+        className="fixed bottom-6 right-6 bg-red-500 text-white p-3 rounded-full shadow-lg hover:bg-red-600 transition"
+      >
+        <FontAwesomeIcon icon={faArrowUp} className="text-xl" />
+      </button>
     </footer>
   );
 }

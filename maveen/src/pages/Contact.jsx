@@ -62,7 +62,11 @@ const Contact = () => {
       </header> */}
 
       {/* Hero Section */}
+<<<<<<< HEAD
       <section className="bg-white py-16">
+=======
+      <section className="bg-white py-16"  data-aos="zoom-in">
+>>>>>>> origin/main
         <div className="container mx-auto px-6 text-center">
           <h1 className="text-4xl md:text-5xl font-heading font-bold text-[#0050A0] mb-6">
             Contact Us
@@ -80,7 +84,11 @@ const Contact = () => {
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12">
               {/* Contact Form */}
+<<<<<<< HEAD
               <div className="bg-white rounded-lg shadow-lg p-8">
+=======
+              <div className="bg-white rounded-lg shadow-lg p-8"  data-aos="zoom-in-right">
+>>>>>>> origin/main
                 <h2 className="text-2xl font-heading font-bold text-maven-blue mb-6">
                   Send Us a Message
                 </h2>
@@ -247,7 +255,11 @@ const Contact = () => {
               </div>
 
               {/* Contact Information */}
+<<<<<<< HEAD
 <div className="space-y-8">
+=======
+<div className="space-y-8" data-aos="zoom-in-left">
+>>>>>>> origin/main
   {/* Contact Details */}
   <div className="bg-white rounded-lg shadow-lg p-8">
     <h2 className="text-2xl font-heading font-bold text-maven-blue mb-6">
@@ -310,7 +322,11 @@ const Contact = () => {
   </div>
 
   {/* Why Choose Us */}
+<<<<<<< HEAD
   <div className="bg-[#0050A0] text-white rounded-lg shadow-lg p-8">
+=======
+  <div className="bg-[#0050A0] text-white rounded-lg shadow-lg p-8"  data-aos="zoom-in-right">
+>>>>>>> origin/main
     <h2 className="text-2xl font-heading font-bold mb-6">
       Why Choose Maven Yanim?
     </h2>
@@ -338,7 +354,11 @@ const Contact = () => {
 
       {/* Map Section */}
        <section className="py-16 bg-white">
+<<<<<<< HEAD
       <div className="container mx-auto px-6">
+=======
+      <div className="container mx-auto px-6"  data-aos="fade-down">
+>>>>>>> origin/main
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-heading font-bold text-maven-blue mb-8">
             Visit Our Office
@@ -364,4 +384,8 @@ const Contact = () => {
   );
 };
 
+<<<<<<< HEAD
 export default Contact;
+=======
+export default Contact;
+>>>>>>> origin/main
