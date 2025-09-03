@@ -20,8 +20,8 @@ const Navbar = () => {
           <Link to="/" className="flex items-center text-2xl font-bold gap-2">
             <img src={Logo} alt="Logo" className="w-10 h-10 object-contain" />
             <span>
-              <span className="text-[#D62828]">Ma</span>
-              <span className="text-[#0056A6]">ven</span>
+              <span className="text-[#D62828]">Maven</span>
+              <span className="text-[#0056A6]">Yanim</span>
 
             </span>
           </Link>

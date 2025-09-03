@@ -5,7 +5,9 @@ import {
   faMapMarkerAlt,
   faArrowUp,
 } from "@fortawesome/free-solid-svg-icons";
-import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+// import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import Logo from "../assets/Logo.png";
+
 
 export default function Footer() {
   // Scroll to top function
@@ -19,7 +21,8 @@ export default function Footer() {
         {/* Brand Info */}
         <div>
           <h2 className="flex items-center text-xl font-bold">
-            <span className="bg-white text-blue-700 px-2 py-1 rounded-md mr-2">M</span>
+            {/* <span className="bg-white text-blue-700 px-2 py-1 rounded-md mr-2">M</span> */}
+            <img src={Logo} alt="" className="w-9 h-9 rounded-sm m-2" />
             Maven Yanim
           </h2>
           <p className="mt-4 text-gray-200 leading-relaxed">
@@ -86,20 +89,12 @@ export default function Footer() {
         © 2025 Maven Yanim. All rights reserved. Powered by NeuralArc
       </div>
 
-      {/* WhatsApp Floating Button */}
-      <a
-        href="https://wa.me/917339535472"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed bottom-6 left-6 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition"
-      >
-        <FontAwesomeIcon icon={faWhatsapp} className="text-2xl" />
-      </a>
+     
 
       {/* Scroll to Top Button */}
       <button
         onClick={scrollToTop}
-        className="fixed bottom-6 right-6 bg-red-500 text-white p-3 rounded-full shadow-lg hover:bg-red-600 transition"
+        className="fixed bottom-1 right-6 bg-red-500 text-white p-2 rounded-full shadow-lg hover:bg-red-600 transition"
       >
         <FontAwesomeIcon icon={faArrowUp} className="text-xl" />
       </button>

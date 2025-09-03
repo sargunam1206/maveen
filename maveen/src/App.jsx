@@ -1,22 +1,24 @@
-import React from "react";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
-import Services from "./pages/Services"; 
-import About from './pages/About'
+import Services from "./pages/Services";
+import About from "./pages/About";
 import Footer from "./components/Footer";
 import Contact from "./pages/Contact";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 function App() {
-    useEffect(() => {
+  useEffect(() => {
     AOS.init({
       duration: 1000, // animation duration (ms)
-      once: true, // whether animation should happen only once
+      once: true, // run only once
     });
   }, []);
+
   return (
     <>
       <Router>
@@ -30,7 +32,18 @@ function App() {
           </Routes>
         </main>
       </Router>
+
       <Footer />
+
+      {/* WhatsApp Floating Button */}
+      <a
+        href="https://wa.me/917339535472"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-25 right-6 bg-green-500 text-white p-2 rounded-full shadow-lg hover:bg-green-600 transition"
+      >
+        <FontAwesomeIcon icon={faWhatsapp} className="text-2xl" />
+      </a>
     </>
   );
 }

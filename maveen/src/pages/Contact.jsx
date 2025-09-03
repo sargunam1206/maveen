@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useRef,useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import emailjs from "emailjs-com";
 import {
   faEnvelope,
   faPhone,
@@ -18,51 +19,56 @@ const center = {
   lat: 12.9716, // Replace with your office latitude
   lng: 77.5946, // Replace with your office longitude
 };
+
+const services = [
+  { id: 1, name: "OpEx Consulting" },
+  { id: 2, name: "5S Training & Implementation" },
+  { id: 3, name: "Quality Management System" },
+  { id: 4, name: "TPM Implementation" },
+  { id: 5, name: "Productivity & Inventory Management" },
+  { id: 6, name: "Kaizen & Lean Practices" },
+  { id: 7, name: "Human Resource Development" },
+  { id: 8, name: "General Inquiry" },
+];
+
 const Contact = () => {
+    const [flash, setFlash] = useState(null);
+      const [selectedService, setSelectedService] = useState(services[0]);
+
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_ysq8lvn", // replace with EmailJS service ID
+        "template_kngr4nf", // replace with EmailJS template ID
+        form.current,
+        "7cHgRBfbN3nmtOlHv" // replace with EmailJS public key
+      )
+      .then(
+        () => {
+          setFlash({ type: "success", message: "✅ Message sent successfully!" });
+          e.target.reset();
+          setTimeout(() => setFlash(null), 4000); // hide after 4s
+        },
+        (error) => {
+          setFlash({
+            type: "error",
+            message: "❌ Failed to send message. Please try again.",
+          });
+          console.error("EmailJS Error:", error);
+          setTimeout(() => setFlash(null), 4000);
+        }
+      );
+  };
+
   return (
     <>
-      {/* Header */}
-      {/* <header className="bg-maven-blue text-white shadow-lg">
-        <div className="container mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
-                <span className="text-maven-blue font-bold text-xl">M</span>
-              </div>
-              <h1 className="text-2xl  text-[]font-heading font-bold">Maven Yanim</h1>
-            </div>
-            <nav className="hidden md:flex space-x-8">
-              <a
-                href="#"
-                className="hover:text-maven-red transition-colors duration-300 border-b-2 border-transparent hover:border-maven-red"
-              >
-                Home
-              </a>
-              <a
-                href="#"
-                className="hover:text-maven-red transition-colors duration-300 border-b-2 border-transparent hover:border-maven-red"
-              >
-                Services
-              </a>
-              <a
-                href="#"
-                className="hover:text-maven-red transition-colors duration-300 border-b-2 border-transparent hover:border-maven-red"
-              >
-                About
-              </a>
-              <a
-                href="#"
-                className="hover:text-maven-red transition-colors duration-300 border-b-2 border-maven-red"
-              >
-                Contact
-              </a>
-            </nav>
-          </div>
-        </div>
-      </header> */}
-
       {/* Hero Section */}
-      <section className="bg-white py-16"  data-aos="zoom-in">
+      {/* <section className="bg-white py-16" data-aos="zoom-in">
         <div className="container mx-auto px-6 text-center">
           <h1 className="text-4xl md:text-5xl font-heading font-bold text-[#0050A0] mb-6">
             Contact Us
@@ -72,31 +78,63 @@ const Contact = () => {
             consulting experts today.
           </p>
         </div>
-      </section>
+      </section> */}
+      
+{/* Hero Section */}
+<section className="bg-white py-16" data-aos="zoom-in">
+  <div className="container mx-auto px-6 text-center">
+    <h1 className="text-4xl md:text-5xl font-heading font-bold text-[#0050A0] mb-6">
+      Contact Us
+    </h1>
+    <p className="text-xl text-maven-gray max-w-3xl mx-auto leading-relaxed">
+      Ready to transform your operations? Get in touch with our OpEx
+      consulting experts today.
+    </p>
+  </div>
+</section>
+
+{/* Flash Message Section (just after Hero, before Contact Form) */}
+{flash && (
+  <div className="container mx-auto px-6 mt-4">
+    <div
+      className={`rounded-lg px-6 py-4 shadow-md font-medium text-center transition-all duration-300 ${
+        flash.type === "success"
+          ? "bg-green-100 text-green-800 border border-green-300"
+          : "bg-red-100 text-red-800 border border-red-300"
+      }`}
+    >
+      {flash.message}
+    </div>
+  </div>
+)}
 
       {/* Contact Form & Info Section */}
       <section className="py-16 bg-gray-200">
         <div className="container mx-auto px-6">
+         
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12">
               {/* Contact Form */}
-              <div className="bg-white rounded-lg shadow-lg p-8"  data-aos="zoom-in-right">
+              <div
+                className="bg-white rounded-lg shadow-lg p-8"
+                data-aos="zoom-in-right"
+              >
                 <h2 className="text-2xl font-heading font-bold text-maven-blue mb-6">
                   Send Us a Message
                 </h2>
-                <form id="contactForm" className="space-y-6">
+                <form ref={form} onSubmit={sendEmail} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
                       <label
                         htmlFor="firstName"
                         className="block text-sm font-medium text-maven-gray mb-2"
                       >
-                        First Name *
+                        First Name <span className="text-red-600">*</span>
                       </label>
                       <input
                         type="text"
                         id="firstName"
-                        name="firstName"
+                        name="firstNam"
                         required
                         className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-maven-red focus:outline-none transition-colors duration-300"
                       />
@@ -106,13 +144,13 @@ const Contact = () => {
                         htmlFor="lastName"
                         className="block text-sm font-medium text-maven-gray mb-2"
                       >
-                        Last Name *
+                        Last Name 
                       </label>
                       <input
                         type="text"
                         id="lastName"
                         name="lastName"
-                        required
+                        
                         className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-maven-red focus:outline-none transition-colors duration-300"
                       />
                     </div>
@@ -123,7 +161,7 @@ const Contact = () => {
                       htmlFor="email"
                       className="block text-sm font-medium text-maven-gray mb-2"
                     >
-                      Email Address *
+                      Email Address  <span className="text-red-600">*</span>
                     </label>
                     <input
                       type="email"
@@ -154,7 +192,7 @@ const Contact = () => {
                       htmlFor="company"
                       className="block text-sm font-medium text-maven-gray mb-2"
                     >
-                      Company Name *
+                      Company Name  <span className="text-red-600">*</span>
                     </label>
                     <input
                       type="text"
@@ -170,7 +208,7 @@ const Contact = () => {
                       htmlFor="industry"
                       className="block text-sm font-medium text-maven-gray mb-2"
                     >
-                      Industry *
+                      Industry  <span className="text-red-600">*</span>
                     </label>
                     <select
                       id="industry"
@@ -188,44 +226,53 @@ const Contact = () => {
                     </select>
                   </div>
 
-                  <div>
-                    <label
-                      htmlFor="service"
-                      className="block text-sm font-medium text-maven-gray mb-2"
-                    >
-                      Service Interest
-                    </label>
-                    <select
-                      id="service"
-                      name="service"
-                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-maven-red focus:outline-none transition-colors duration-300"
-                    >
-                      <option value="">Select a service</option>
-                      <option value="opex-consulting">OpEx Consulting</option>
-                      <option value="5s-implementation">
-                        5S Training & Implementation
-                      </option>
-                      <option value="quality-management">
-                        Quality Management System
-                      </option>
-                      <option value="tpm">TPM Implementation</option>
-                      <option value="productivity">
-                        Productivity & Inventory Management
-                      </option>
-                      <option value="kaizen-lean">Kaizen & Lean Practices</option>
-                      <option value="hr-development">
-                        Human Resource Development
-                      </option>
-                      <option value="general-inquiry">General Inquiry</option>
-                    </select>
-                  </div>
+<div>
+  <label
+    htmlFor="service"
+    className="block text-sm font-medium text-maven-gray mb-2"
+  >
+    Service Interest <span className="text-red-500">*</span>
+  </label>
+
+  <div className="relative">
+    <select
+      id="service"
+      name="service"
+      className="w-full appearance-none px-4 py-3 pr-10 border-2 border-gray-300 rounded-lg bg-white text-gray-700 focus:border-blue-500 focus:ring-2 focus:ring-blue-300 focus:outline-none transition duration-300"
+      defaultValue=""
+    >
+      <option value="" disabled>
+        Select a service
+      </option>
+      <option value="opex-consulting" className="hover:bg-blue-100">
+        OpEx Consulting
+      </option>
+      <option value="5s-implementation">5S Training & Implementation</option>
+      <option value="quality-management">Quality Management System</option>
+      <option value="tpm">TPM Implementation</option>
+      <option value="productivity">
+        Productivity & Inventory Management
+      </option>
+      <option value="kaizen-lean">Kaizen & Lean Practices</option>
+      <option value="hr-development">Human Resource Development</option>
+      <option value="general-inquiry" className="rounded-lg">General Inquiry</option>
+    </select>
+
+    {/* Dropdown Icon */}
+    <span className="absolute inset-y-0 right-3 flex items-center pointer-events-none text-gray-500">
+      ▼
+    </span>
+  </div>
+</div>
+
+
 
                   <div>
                     <label
                       htmlFor="message"
                       className="block text-sm font-medium text-maven-gray mb-2"
                     >
-                      Message *
+                      Message  <span className="text-red-600">*</span>
                     </label>
                     <textarea
                       id="message"
@@ -261,8 +308,8 @@ const Contact = () => {
         </div>
         <div>
           <h3 className="font-semibold text-[#0050A0] mb-1">Email</h3>
-          <p className="text-maven-gray">info@mavenyanim.com</p>
-          <p className="text-maven-gray">consulting@mavenyanim.com</p>
+          <p className="text-maven-gray"> balak@mavenyanim.in</p>
+          {/* <p className="text-maven-gray">consulting@mavenyanim.com</p> */}
         </div>
       </div>
 
@@ -273,8 +320,8 @@ const Contact = () => {
         </div>
         <div>
           <h3 className="font-semibold text-[#0050A0] mb-1">Phone</h3>
-          <p className="text-maven-gray">+1 (555) 123-4567</p>
-          <p className="text-maven-gray">+1 (555) 987-6543</p>
+          <p className="text-maven-gray">+91 88704 59630 </p>
+          {/* <p className="text-maven-gray">+1 (555) 987-6543</p> */}
         </div>
       </div>
 
@@ -288,9 +335,9 @@ const Contact = () => {
         </div>
         <div>
           <h3 className="font-semibold text-[#0050A0] mb-1">Office</h3>
-          <p className="text-maven-gray">123 Business District</p>
+          <p className="text-maven-gray"> 15, VKS Layout Extension,</p>
           <p className="text-maven-gray">Suite 456, Corporate Tower</p>
-          <p className="text-maven-gray">City, State 12345</p>
+          <p className="text-maven-gray"> Coimbatore, Tamil Nadu, India - 642 002</p>               
         </div>
       </div>
 

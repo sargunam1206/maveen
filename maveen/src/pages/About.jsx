@@ -167,14 +167,15 @@ const About = () => {
 </div>
 
 
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center py-2 px-6 text-center">
           <h1 className="text-[#0050A0] font-bold text-4xl mb-5 mt-4">
             Operational Excellence (OpEx)
           </h1>
-          <p className="p-3">
+          <p className="p-3 text-xl max-w-3xl">
             We help businesses implement continuous improvement across all
             aspects of operations by:
           </p>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 px-10 py-15">
           { lists.map((list,index)=>(
             <div className="p-6 bg-white rounded-lg shadow-md border-t-4 border-red-600 flex flex-col justify-center items-center text-center hover:shadow-lg hover:scale-105  transition trnsform duration-300" key={index}
@@ -186,7 +187,7 @@ const About = () => {
           ))}
           </div>
         
-        </div>
+        
         <div className="flex flex-col justify-center items-center bg-gray-200">
           <h1 className="text-4xl text-[#0050A0] mb-5 mt-6 font-bold">
             Our Methodology
