@@ -17,8 +17,8 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
           
           {/* Logo */}
-          <Link to="/" className="flex items-center text-2xl font-bold gap-2">
-            <img src={Logo} alt="Logo" className="w-10 h-10 object-contain" />
+          <Link to="/" className="flex items-center text-3xl font-bold gap-2">
+            <img src={Logo} alt="Logo" className="w-15 h-15 object-contain" />
             <span>
               <span className="text-[#D62828]">Maven</span>
               <span className="text-[#0056A6]">Yanim</span>

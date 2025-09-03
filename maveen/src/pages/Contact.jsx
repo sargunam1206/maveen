@@ -43,10 +43,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_ysq8lvn", // replace with EmailJS service ID
-        "template_kngr4nf", // replace with EmailJS template ID
+        "service_p1k4d2z", // replace with EmailJS service ID
+        "template_hsq67yb", // replace with EmailJS template ID
         form.current,
-        "7cHgRBfbN3nmtOlHv" // replace with EmailJS public key
+        "5JLd2KkGJal3VKIou" // replace with EmailJS public key
       )
       .then(
         () => {
@@ -203,28 +203,41 @@ const Contact = () => {
                     />
                   </div>
 
-                  <div>
-                    <label
-                      htmlFor="industry"
-                      className="block text-sm font-medium text-maven-gray mb-2"
-                    >
-                      Industry  <span className="text-red-600">*</span>
-                    </label>
-                    <select
-                      id="industry"
-                      name="industry"
-                      required
-                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-maven-red focus:outline-none transition-colors duration-300"
-                    >
-                      <option value="">Select your industry</option>
-                      <option value="engineering">Engineering</option>
-                      <option value="automotive">Automotive</option>
-                      <option value="textile">Textile</option>
-                      <option value="food">Food</option>
-                      <option value="consumer-goods">Consumer Goods</option>
-                      <option value="other">Other</option>
-                    </select>
-                  </div>
+                  {/* Industry Dropdown */}
+<div>
+  <label
+    htmlFor="industry"
+    className="block text-sm font-medium text-maven-gray mb-2"
+  >
+    Industry <span className="text-red-600">*</span>
+  </label>
+
+  <div className="relative">
+    <select
+      id="industry"
+      name="industry"
+      required
+      className="w-full appearance-none px-4 py-3 pr-10 border-2 border-gray-300 rounded-lg bg-white text-gray-700 focus:border-blue-500 focus:ring-2 focus:ring-blue-300 focus:outline-none transition duration-300"
+      defaultValue=""
+    >
+      <option value="" disabled>
+        Select your industry
+      </option>
+      <option value="engineering">Engineering</option>
+      <option value="automotive">Automotive</option>
+      <option value="textile">Textile</option>  
+      <option value="food">Food</option>
+      <option value="consumer-goods">Consumer Goods</option>
+      <option value="other">Other</option>
+    </select>
+
+    {/* Dropdown Icon */}
+    <span className="absolute inset-y-0 right-3 flex items-center pointer-events-none text-gray-400">
+      ▼
+    </span>
+  </div>
+</div>
+           
 
 <div>
   <label

@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import Contact from "./pages/Contact";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 function App() {
   useEffect(() => {
@@ -37,13 +38,22 @@ function App() {
 
       {/* WhatsApp Floating Button */}
       <a
-        href="https://wa.me/917339535472"
+        href="https://wa.me/918870459630"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-25 right-6 bg-green-500 text-white p-2 rounded-full shadow-lg hover:bg-green-600 transition"
       >
         <FontAwesomeIcon icon={faWhatsapp} className="text-2xl" />
       </a>
+      <a
+        href="http://linkedin.com/in/maven-yanim-40975031b"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-39 right-6 bg-blue-500 text-white p-2 rounded-full shadow-lg hover:bg-blue-600 transition"
+      >
+        <FontAwesomeIcon icon={faLinkedin} className="text-2xl" />
+      </a>
+       
     </>
   );
 }

@@ -52,7 +52,7 @@ const WhyChooseUs = () => {
         <h2 className="text-5xl font-bold text-gray-800 mb-4">
           Why Choose Us
         </h2>
-        <p className="text-gray-600 mb-12">
+        <p className="text-gray-600  font-semibold mb-12">
           The <span className="text-[#D62828] font-semibold">Maven Yanim Advantage</span>
         </p>
 

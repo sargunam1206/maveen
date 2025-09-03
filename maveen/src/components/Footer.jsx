@@ -6,7 +6,7 @@ import {
   faArrowUp,
 } from "@fortawesome/free-solid-svg-icons";
 // import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import Logo from "../assets/Logo.png";
+import image from "../assets/image.png";
 
 
 export default function Footer() {
@@ -20,11 +20,19 @@ export default function Footer() {
       <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* Brand Info */}
         <div>
-          <h2 className="flex items-center text-xl font-bold">
-            {/* <span className="bg-white text-blue-700 px-2 py-1 rounded-md mr-2">M</span> */}
-            <img src={Logo} alt="" className="w-9 h-9 rounded-sm m-2" />
-            Maven Yanim
-          </h2>
+          {/* <h2 className="flex items-center text-xl text-[#D62828] font-bold"> */}
+          
+            <img src={image} alt="" className="w-50 h-15 rounded-sm m-2"  />
+            {/* Maven  */}
+          {/* </h2> */}
+
+           {/* <img src={Logo} alt="Logo" className="w-15 h-15 object-contain" /> */}
+                       {/* <span>
+                         <span className="text-[#D62828]">Maven</span>
+                         <span className="text-[#0056A6]">Yanim</span>
+           
+                       </span> */}
+
           <p className="mt-4 text-gray-200 leading-relaxed">
             Professional consulting for operational excellence across industries.
           </p>
