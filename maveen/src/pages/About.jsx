@@ -155,8 +155,7 @@ const About = () => {
         <FontAwesomeIcon
         icon={faUsers}
         className="text-[#D62828] text-3xl sm:text-4xl pr-4 "
-      /> Our consultants bring extensive experience from{" "}
-        <span className="text-[#0050A0]">TUV-SUD South Asia</span> and have
+      /> Our consultants bring extensive experience and have
         successfully implemented OpEx projects for over{" "}
         <span className="text-[#D62828]">40 industries since 2014.</span> With a
         blend of global standards and local expertise, we ensure impactful

@@ -93,9 +93,22 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-gray-400 mt-12 pt-4 text-center text-gray-200 text-sm">
+      {/* <div className="border-t border-gray-400 mt-12 pt-4 text-center text-gray-200 text-sm">
         © 2025 Maven Yanim. All rights reserved. Powered by NeuralArc
-      </div>
+      </div> */}
+      {/* Bottom Bar */}
+<div className="border-t border-gray-400 mt-12 pt-4 text-center text-gray-200 text-sm">
+  © 2025 Maven Yanim. All rights reserved. Powered by{" "}
+  <a 
+    href="https://www.neuralarc.com" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+   className="text-white hover:text-yellow-300 font-medium transition-colors duration-200"
+  >
+    NeuralArc
+  </a>
+</div>
+
 
      
 

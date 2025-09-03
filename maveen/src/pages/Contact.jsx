@@ -397,7 +397,7 @@ const Contact = () => {
       </section>
 
       {/* Map Section */}
-       <section className="py-16 bg-white">
+       {/* <section className="py-16 bg-white">
       <div className="container mx-auto px-6"  data-aos="fade-down">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-heading font-bold text-maven-blue mb-8">
@@ -419,7 +419,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
+    </section> */}
     </>
   );
 };
