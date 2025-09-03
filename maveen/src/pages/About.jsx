@@ -111,7 +111,7 @@ const About = () => {
     efficiency, productivity, and quality.
   </p>
 </div> */}
-   <h1 className="text-2xl sm:text-3xl md:text-4xl text-center text-[#0050A0] font-bold mb-4">
+   <h1 className="text-2xl sm:text-3xl md:text-4xl text-center text-[#0050A0] mt-8  font-bold mb-4">
       Our Mission
     </h1>
 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-10 px-6" data-aos="zoom-in">

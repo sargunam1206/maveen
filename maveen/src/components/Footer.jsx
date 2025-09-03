@@ -66,13 +66,15 @@ export default function Footer() {
             <li className="flex items-start">
               <FontAwesomeIcon icon={faPhone} className="mr-3 text-green-400 mt-1" />
               <span>
-                +91 88704 59630 <br /> +91 98947 61332
+                +91 88704 59630 
+                {/* <br /> +91 98947 61332 */}
               </span>
             </li>
             <li className="flex items-start">
               <FontAwesomeIcon icon={faEnvelope} className="mr-3 text-blue-200 mt-1" />
               <span>
-                balak@mavenyanim.in <br /> saibalak@mavenyanim.in
+                balak@mavenyanim.in 
+                {/* <br /> saibalak@mavenyanim.in */}
               </span>
             </li>
           </ul>
@@ -81,7 +83,7 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="border-t border-gray-400 mt-12 pt-4 text-center text-gray-200 text-sm">
-        © 2025 Maven Yanim. All rights reserved.
+        © 2025 Maven Yanim. All rights reserved. Powered by NeuralArc
       </div>
 
       {/* WhatsApp Floating Button */}
