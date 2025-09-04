@@ -378,7 +378,7 @@ const Contact = () => {
       {[
         "10+ years of OpEx consulting experience",
         "40+ industries successfully served",
-        "TUV-SUD certified consultants",
+        // "TUV-SUD certified consultants",
         "Proven track record of results",
       ].map((item, index) => (
         <div key={index} className="flex items-center space-x-3">

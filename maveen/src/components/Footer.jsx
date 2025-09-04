@@ -109,9 +109,6 @@ export default function Footer() {
   </a>
 </div>
 
-
-     
-
       {/* Scroll to Top Button */}
       <button
         onClick={scrollToTop}

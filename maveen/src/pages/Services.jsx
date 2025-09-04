@@ -459,7 +459,7 @@ const Services = () => {
                 <p className="text-sm md:text-base">Develop tracking of staff performance</p>
               </div>
               <div className="flex items-start">
-                <ChevronDoubleRightIcon className="w-7 h-4  md:h-5 text-[#0056A6] mt-1 mr-2" />
+                <ChevronDoubleRightIcon className="w-6 h-4  md:h-5 text-[#0056A6] mt-1 mr-2" />
                 <p className="text-sm md:text-base">Develop a mechanism for daily data collection for all types of KPI / KRA</p>
               </div>
               <div className="flex items-start">

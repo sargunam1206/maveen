@@ -1,5 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 import {
   faUsers,
   faCheckCircle,
@@ -229,12 +230,13 @@ const About = () => {
   </p>
   <div className="flex flex-col sm:flex-row gap-4 mb-6 mt-3">
     <button className="bg-red-600 text-white font-semibold px-6 py-3 rounded-md shadow-md hover:bg-red-700 transition">
-      Get Started
+      <Link to="/contact">Get Started</Link>
     </button>
     <button className="border-2 border-white text-white font-semibold px-6 py-3 rounded-md hover:bg-white hover:text-blue-700 transition">
-      Learn More
+      <Link to="/services">Learn More</Link>
     </button>
   </div>
+  
 </div>
 
       </div>
