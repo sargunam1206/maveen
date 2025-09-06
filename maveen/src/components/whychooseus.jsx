@@ -25,7 +25,7 @@ const WhyChooseUs = () => {
       icon: <Users className="w-10 h-10 text-[#D62828]" />,
       title: "Expert Trainers",
       description:
-        "Experienced consultants with hands-on industry expertise.",
+        "Qualified and Experienced consultants with hands-on industry expertise.",
     },
     {
       icon: <Clock className="w-10 h-10 text-[#D62828]" />,
@@ -37,12 +37,12 @@ const WhyChooseUs = () => {
       title: "Trust & Fairness",
       description: "Integrity and fairness maintained throughout the process.",
     },
-    {
-      icon: <GraduationCap className="w-10 h-10 text-[#D62828]" />,
-      title: "Qualified Consultants",
-      description:
-        "Certified Lean Six Sigma professionals with cross-industry expertise.",
-    },
+    // {
+    //   icon: <GraduationCap className="w-10 h-10 text-[#D62828]" />,
+    //   title: "Qualified Consultants",
+    //   description:
+    //     "Certified Lean Six Sigma professionals with cross-industry expertise.",
+    // },
   ];
 
   return (

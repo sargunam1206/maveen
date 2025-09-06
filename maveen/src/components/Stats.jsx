@@ -29,7 +29,7 @@ const Stats = () => {
         >
           <UserGroupIcon className="w-10 h-10 text-[#D62828] mb-3" />
           <h3 className="text-4xl font-bold text-gray-800">
-            {inView ? <CountUp end={14} duration={2} /> : "0"}+
+            {inView ? <CountUp end={50} duration={2} /> : "0"}+
           </h3>
           <p className="text-gray-600">Clients</p>
         </div>
@@ -49,7 +49,7 @@ const Stats = () => {
         <div className="flex flex-col items-center shadow-lg rounded-lg" ref={ref} data-aos="flip-left">
           <StarIcon className="w-10 h-10 text-[#D62828] mb-3" />
           <h3 className="text-4xl font-bold text-gray-800">
-           {inView ? <CountUp end={10} duration={2} /> : "0"}+
+           {inView ? <CountUp end={47} duration={2} /> : "0"}+
 
           </h3>
           <p className="text-gray-600">Five Star Ratings</p>

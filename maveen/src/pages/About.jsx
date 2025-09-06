@@ -38,42 +38,54 @@ const About = () => {
   const cards =[
     {
       icon:'1',
-      title:"Diagnosis Study",
-      discription:"Gap assessment",
+      title:"Diagnosis study for gap assessment",
+      discription:"DSR / Road Map",
     },{
       icon:"2",
-      title:"5S Training",
-      discription:"Implementation",
+      title:"5S Training and Implementation",
+      discription:"Identification and Traceabilty",
     },
     {
       icon:"3",
-      title:"MIS Development ",
-      discription:"Management Information Systems",
+      title:"Management Information Systems (MIS) Development ",
+      discription:"Data Collection and Analysis",
     },
     {
       icon:"4",
-      title:"Quality Management",
-      discription:"System Improvement"
+      title:"Quality Management System Improvement",
+      discription:"QMS / APQP / PPAP / SPC/ SQC"
     },
     {
       icon:"5",
-      title:"TPM Implementation",
-      discription:"Total Productive Maintenance",
+      title:"Total Productive Maintenance (TPM) Implementation",
+      discription:"CLIT / OEE",
     },
     {
       icon:"6",
       title:"Productivity Management",
-      discription:"Inventory Management",
-    },{
+      discription:"Plan Vs Actual / PPC",
+    },
+     {
       icon:"7",
-      title:"Kaizen & Loan",
-      discription:"Practice",
+      title:"Inventory Management",
+      discription:"ABC / VED Analysis / ROL / SCM"
     },
     {
       icon:"8",
-      title:"HR Development",
-      discription:"Human Resource Development"
+      title:"Kaizen Culture Inculcation",
+      discription:"Continuous Improvement / Rewarding",
+    },
+    {
+      icon:"9",
+      title:"Human Resource Development and Training",
+      discription:"JD / Skill Matrix / KPI / KRA"
+    },
+     {
+      icon:"10",
+      title:"Lean Manufacturing Practices",
+      discription:"VSM / Muda / Mura / Muri"
     }
+     
   ]
   return (
     <>
@@ -98,7 +110,7 @@ const About = () => {
           <span className="text-[#0050A0]">
             Engineering, Automotive, Textile, Food, and Consumer Goods
           </span>{" "}
-          industries. We focus on helping businesses implement World Class
+          industries. We focus on helping businesses to implement World Class
           Manufacturing Practices through Operational Excellence (OpEx) projects.
         </p>
       </div>
@@ -171,10 +183,10 @@ const About = () => {
           <h1 className="text-[#0050A0] font-bold text-4xl mb-5 mt-4">
             Operational Excellence (OpEx)
           </h1>
-          <p className="p-3 text-xl max-w-3xl">
+          {/* <p className="p-3 text-xl max-w-3xl">
             We help businesses implement continuous improvement across all
             aspects of operations by:
-          </p>
+          </p> */}
           </div>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 px-10 py-15">
           { lists.map((list,index)=>(

@@ -321,7 +321,7 @@ const Contact = () => {
         </div>
         <div>
           <h3 className="font-semibold text-[#0050A0] mb-1">Email</h3>
-          <p className="text-maven-gray"> balak@mavenyanim.in</p>
+          <p className="text-maven-gray"> info@mavenyanim.in</p>
           {/* <p className="text-maven-gray">consulting@mavenyanim.com</p> */}
         </div>
       </div>
@@ -348,9 +348,10 @@ const Contact = () => {
         </div>
         <div>
           <h3 className="font-semibold text-[#0050A0] mb-1">Office</h3>
-          <p className="text-maven-gray"> 15, VKS Layout Extension,</p>
-          <p className="text-maven-gray">Suite 456, Corporate Tower</p>
-          <p className="text-maven-gray"> Coimbatore, Tamil Nadu, India - 642 002</p>               
+          <p className="text-maven-gray">15, VKS Layout Extension,</p>
+          <p className="text-maven-gray">A. Sangampalayam,</p>
+          <p className="text-maven-gray">Pollachi - 642 002,</p>
+          <p className="text-maven-gray">  Coimbatore, Tamil Nadu, India.</p>               
         </div>
       </div>
 
@@ -404,7 +405,7 @@ const Contact = () => {
             Visit Our Office
           </h2>
           <div className="bg-maven-light rounded-lg p-5 shadow-lg">
-            <LoadScript googleMapsApiKey="AIzaSyAoU5tj8vHaY0Ro_xC0XZwRV_lio-eVOfk">
+            <LoadScript googleMapsApiKey="AIzaSyCykKFn8G_V6ZH0JCb5ZU1DTVqEa-tIU8w">
               <GoogleMap
                 mapContainerStyle={containerStyle}
                 center={center}

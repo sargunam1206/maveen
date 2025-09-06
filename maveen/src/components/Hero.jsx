@@ -18,7 +18,7 @@ const Hero = () => (
             Excellence to Execute & Care
           </p> */}
           <p className="text-lg mb-6">
-            Advisory Services & Business Process Improvement. <br />
+            Advisory Services & Business Process Improvement.{/*<br /> */}
             We help organizations achieve performance through specialized training,
             consulting, and world-class operational excellence practices.
           </p>

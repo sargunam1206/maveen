@@ -31,7 +31,7 @@ const Capabilities = () => {
           Our Core Services
         </h2>
         <p className="text-gray-600 mb-12">
-          We provide end-to-end solutions that drive your digital transformation
+          We provide end-to-end solutions that drive your Business Sustainable transformation
         </p>
 
         {/* Flex layout instead of grid */}

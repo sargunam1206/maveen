@@ -316,7 +316,7 @@ const Services = () => {
               </div>
               <div className="flex items-start">
                 <ChevronDoubleRightIcon className="w-4 h-4 md:w-5 md:h-5 text-[#0056A6] mt-1 mr-2" />
-                <p className="text-sm md:text-base">Autonomous Maintenance and CUI / Sheet</p>
+                <p className="text-sm md:text-base">Autonomous Maintenance and CLIT  Sheet</p>
               </div>
               <div className="flex items-start">
                 <ChevronDoubleRightIcon className="w-7 h-4 md:w-5 md:h-5 text-[#0056A6] mt-1 mr-2" />
@@ -332,7 +332,7 @@ const Services = () => {
               </div>
               <div className="flex items-start">
                 <ChevronDoubleRightIcon className="w-4 h-4 md:w-5 md:h-5 text-[#0056A6] mt-1 mr-2" />
-                <p className="text-sm md:text-base">Maintenance Space Management</p>
+                <p className="text-sm md:text-base">Maintenance Spare Management</p>
               </div>
               <div className="flex items-start">
                 <ChevronDoubleRightIcon className="w-4 h-4 md:w-5 md:h-5 text-[#0056A6] mt-1 mr-2" />

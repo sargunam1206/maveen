@@ -34,7 +34,7 @@ export default function Footer() {
                        </span> */}
 
           <p className="mt-4 text-gray-200 leading-relaxed">
-            Professional consulting for operational excellence across industries.
+           Endeavor to Excellence
           </p>
         </div>
 
@@ -43,9 +43,9 @@ export default function Footer() {
           <h3 className="text-lg font-semibold mb-4">Services</h3>
           <ul className="space-y-2 text-gray-200">
             <li>OpEx Consulting</li>
-            <li>5S Implementation</li>
+            <li>5S Training & Implementation</li>
             <li>Quality Management</li>
-            <li>Lean Practices</li>
+            <li>Lean Manufacturing Practices</li>
           </ul>
         </div>
 
@@ -64,14 +64,14 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
           <p className="text-gray-300 mb-4 text-sm">
-            MAVEN YANIM – Endeavor to Excellence
+            MAVEN YANIM 
           </p>
           <ul className="space-y-4 text-gray-200 text-sm leading-relaxed">
             <li className="flex items-start">
               <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-3 text-red-500 mt-1" />
               <span>
-                15, VKS Layout Extension, A. Sangampalayam, Pollachi, <br />
-                Coimbatore, Tamil Nadu, India - 642 002
+                15, VKS Layout Extension, <br />A. Sangampalayam, <br />Pollachi - 642 002, <br />
+                Coimbatore, Tamil Nadu, India.
               </span>
             </li>
             <li className="flex items-start">
@@ -84,7 +84,7 @@ export default function Footer() {
             <li className="flex items-start">
               <FontAwesomeIcon icon={faEnvelope} className="mr-3 text-blue-200 mt-1" />
               <span>
-                balak@mavenyanim.in 
+              info@mavenyanim.in
                 {/* <br /> saibalak@mavenyanim.in */}
               </span>
             </li>
