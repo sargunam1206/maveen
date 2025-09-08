@@ -94,6 +94,13 @@ const About = () => {
           <h1 className="text-4xl text-[#0050A0] font-bold mb-4">
             About Maven Yanim
           </h1>
+          {/* <p className="text-xl text-maven-gray max-w-3xl mx-auto leading-relaxed">            
+  Maven Yanim is a trusted consulting partner committed to driving business
+  growth and operational excellence. We deliver tailored solutions that combine
+  industry expertise, proven methodologies, and innovation to help organizations
+  achieve sustainable transformation.
+</p> */}
+
  <p className="text-xl text-maven-gray max-w-3xl mx-auto leading-relaxed">            
             Professional consulting firm delivering specialized services across
             multiple industries through Operational Excellence.
@@ -104,7 +111,7 @@ const About = () => {
         <h1 className="text-2xl sm:text-3xl md:text-4xl text-[#0050A0] font-bold mb-4 mt-5 text-center">
           Who We Are
         </h1>
-        <p className="p-6 w-full max-w-3xl bg-white rounded-lg font-medium text-sm sm:text-base md:text-lg text-center sm:text-left">
+        {/* <p className="p-6 w-full max-w-3xl bg-white rounded-lg font-medium text-sm sm:text-base md:text-lg text-center sm:text-left">
           Maven Yanim is a professional consulting firm delivering specialized
           services across{" "}
           <span className="text-[#0050A0]">
@@ -112,7 +119,17 @@ const About = () => {
           </span>{" "}
           industries. We focus on helping businesses to implement World Class
           Manufacturing Practices through Operational Excellence (OpEx) projects.
-        </p>
+        </p> */}
+        <p className="p-6 w-full max-w-3xl bg-white rounded-lg font-medium text-sm sm:text-base md:text-lg text-justify sm:text-left">
+  We are a team of experienced professionals with deep expertise in{" "}
+  <span className="text-[#0050A0]">
+    engineering, automotive, textile, food and consumer goods
+  </span>{" "}
+  industries. Our mission is to empower organizations by implementing
+  world-class manufacturing practices and operational excellence (OpEx) projects
+  that deliver measurable results.
+</p>
+
       </div>
 
 {/* <div className="flex flex-col justify-center items-center py-10 px-6">
@@ -134,7 +151,7 @@ const About = () => {
  
     <p className="bg-[#0050A0] text-white p-6 sm:p-8 rounded-lg text-sm sm:text-base md:text-lg font-medium">
       To empower organizations to achieve sustainable growth by improving
-      efficiency, productivity, and quality.
+      efficiency, productivity and quality.
     </p>
   </div>
 
@@ -164,7 +181,7 @@ const About = () => {
     {/* Right Side: Icon + Content */}
     <div className="w-full sm:w-1/2 flex flex-col sm:flex-row items-start  gap-3">
      
-      <p className="text-gray-700 font-medium text-sm sm:text-base md:text-lg text-left">
+      <p className="text-gray-700 font-medium text-sm sm:text-base md:text-lg text-justify">
         <FontAwesomeIcon
         icon={faUsers}
         className="text-[#D62828] text-3xl sm:text-4xl pr-4 "
@@ -183,10 +200,10 @@ const About = () => {
           <h1 className="text-[#0050A0] font-bold text-4xl mb-5 mt-4">
             Operational Excellence (OpEx)
           </h1>
-          {/* <p className="p-3 text-xl max-w-3xl">
+          <p className="p-3 text-xl max-w-3xl">
             We help businesses implement continuous improvement across all
             aspects of operations by:
-          </p> */}
+          </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 px-10 py-15">
           { lists.map((list,index)=>(

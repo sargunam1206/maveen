@@ -12,7 +12,7 @@ const Capabilities = () => {
     },
     {
       icon: <ShieldCheck className="w-10 h-10 text-[#D62828]" />,
-      title: "Quality Improvements",
+      title: "Quality Improvement",
       description: "Driving excellence by improving product and service quality.",
     },
     {
@@ -31,7 +31,7 @@ const Capabilities = () => {
           Our Core Services
         </h2>
         <p className="text-gray-600 mb-12">
-          We provide end-to-end solutions that drive your Business Sustainable transformation
+         Driving your sustainable transformation with end-to-end solutions
         </p>
 
         {/* Flex layout instead of grid */}

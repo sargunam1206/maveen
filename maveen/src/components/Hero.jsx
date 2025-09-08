@@ -11,16 +11,16 @@ const Hero = () => (
         {/* Left: Text */}
         <div className="flex-1 text-center lg:text-left" data-aos="zoom-in">
           <h1 className="text-3xl lg:text-4xl font-bold text-[#0056A6] mb-4">
-             Excellence to Execute & Care
+             Endeavor to Excellence
           </h1>
 
-          {/* <p className="text-lg text-gray-600 mb-3">
-            Excellence to Execute & Care
-          </p> */}
-          <p className="text-lg mb-6">
-            Advisory Services & Business Process Improvement.{/*<br /> */}
-            We help organizations achieve performance through specialized training,
-            consulting, and world-class operational excellence practices.
+          <p className="text-lg text-gray-600 mb-3 font-bold">
+            Advisory Services and Business Process Improvement.
+          </p>
+          <p className="text-lg mb-6 text-justify">
+            {/*<br /> */}
+            We help organizations improve performance through specialized training, expert
+            consulting and World Class Manufacturing Practices.
           </p>
 
           <div className="flex justify-center lg:justify-start gap-4">

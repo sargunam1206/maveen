@@ -54,7 +54,8 @@ const Services = () => {
           Services
         </h1>
         <p className="p-4 md:p-6 w-full max-w-3xl bg-white rounded-lg font-semibold text-sm sm:text-base md:text-lg text-center">            
-          Our services are crafted with your success in mind, ensuring innovative solutions that adapt to your unique challenges.
+          {/* Our services are crafted with your success in mind, ensuring innovative solutions that adapt to your unique challenges. */}
+          We design our services to drive your success, delivering innovative solutions tailored to your unique challenges.
         </p>
       </motion.section>
 
@@ -76,7 +77,7 @@ const Services = () => {
             <motion.div
               variants={itemVariants}
               whileHover={{ scale: 1.05, y: -5 }}
-              className="w-full max-w-md md:w-[450px] bg-white shadow-md rounded-2xl p-6 md:p-8 text-left hover:shadow-xl transition relative group"
+              className="w-full max-w-md md:w-[450px] bg-white shadow-md rounded-2xl p-6 md:p-8 text-justify hover:shadow-xl transition relative group"
             >
               <Factory className="w-10 h-10 md:w-12 md:h-12 text-[#D62828] mb-4 group-hover:text-red-700 transition-colors" />
               <h3 className="text-lg md:text-xl font-semibold text-[#0056A6] mb-2">
@@ -109,7 +110,7 @@ const Services = () => {
             <motion.div
               variants={itemVariants}
               whileHover={{ scale: 1.05, y: -5 }}
-              className="w-full max-w-md md:w-[400px] bg-white shadow-md rounded-2xl p-6 md:p-8 text-left hover:shadow-xl transition relative group mt-6 md:mt-0"
+              className="w-full max-w-md md:w-[400px] bg-white shadow-md rounded-2xl p-6 md:p-8 text-justify hover:shadow-xl transition relative group mt-6 md:mt-0"
             >
               <Target className="w-10 h-10 md:w-12 md:h-12 text-[#D62828] mb-4 group-hover:text-red-700 transition-colors" />
               <h3 className="text-lg md:text-xl font-semibold text-[#0056A6] mb-2">
@@ -134,7 +135,7 @@ const Services = () => {
             <motion.div
               variants={itemVariants}
               whileHover={{ scale: 1.05, y: -5 }}
-              className="w-full max-w-md md:w-[400px] bg-white shadow-md rounded-2xl p-6 md:p-8 text-left hover:shadow-xl transition relative group mt-6 md:mt-0"
+              className="w-full max-w-md md:w-[400px] bg-white shadow-md rounded-2xl p-6 md:p-8 text-justify hover:shadow-xl transition relative group mt-6 md:mt-0"
             >
               <BarChart3 className="w-10 h-10 md:w-12 md:h-12 text-[#D62828] mb-4 group-hover:text-red-700 transition-colors" />
               <h3 className="text-lg md:text-xl font-semibold text-[#0056A6] mb-2">
@@ -184,7 +185,7 @@ const Services = () => {
             <motion.div
               variants={itemVariants}
               whileHover={{ scale: 1.03, y: -5 }}
-              className="w-full md:w-[950px] bg-gray-100 shadow-md rounded-2xl p-6 md:p-8 text-left hover:shadow-xl transition relative group"
+              className="w-full md:w-[950px] bg-gray-100 shadow-md rounded-2xl p-6 md:p-8 text-justify hover:shadow-xl transition relative group"
             >
               <ShieldCheck className="w-10 h-10 md:w-12 md:h-12 text-[#D62828] mb-4 group-hover:text-red-700 transition-colors" />
               <h3 className="text-lg md:text-xl font-semibold text-[#0056A6] mb-2">
@@ -209,7 +210,7 @@ const Services = () => {
             <motion.div
               variants={itemVariants}
               whileHover={{ scale: 1.03, y: -5 }}
-              className="w-full max-w-md md:w-[350px] bg-gray-100 shadow-md rounded-2xl p-6 md:p-8 text-left hover:shadow-xl transition relative group mt-6 md:mt-0"
+              className="w-full max-w-md md:w-[350px] bg-gray-100 shadow-md rounded-2xl p-6 md:p-8 text-justify hover:shadow-xl transition relative group mt-6 md:mt-0"
             >
               <ClipboardList className="w-10 h-10 md:w-12 md:h-12 text-[#D62828] mb-4 group-hover:text-red-700 transition-colors" />
               <h3 className="text-lg md:text-xl font-semibold text-[#0056A6] mb-2">
@@ -267,7 +268,7 @@ const Services = () => {
             <motion.div
               variants={itemVariants}
               whileHover={{ scale: 1.03, y: -5 }}
-              className="w-full md:w-[550px] bg-white shadow-md rounded-2xl p-6 md:p-8 text-left hover:shadow-xl transition relative group"
+              className="w-full md:w-[550px] bg-white shadow-md rounded-2xl p-6 md:p-8 text-justify hover:shadow-xl transition relative group"
             >
               <Warehouse className="w-10 h-10 md:w-12 md:h-12 text-[#D62828] mb-4 group-hover:text-red-700 transition-colors" />
               <h3 className="text-lg md:text-xl font-semibold text-[#0056A6] mb-2">
@@ -300,7 +301,7 @@ const Services = () => {
             <motion.div
               variants={itemVariants}
               whileHover={{ scale: 1.03, y: -5 }}
-              className="w-full md:w-[750px] bg-white shadow-md rounded-2xl p-6 md:p-8 text-left hover:shadow-xl transition relative group mt-6 md:mt-0"
+              className="w-full md:w-[750px] bg-white shadow-md rounded-2xl p-6 md:p-8 text-justify hover:shadow-xl transition relative group mt-6 md:mt-0"
             >
               <Wrench className="w-10 h-10 md:w-12 md:h-12 text-[#D62828] mb-4 group-hover:text-red-700 transition-colors" />
               <h3 className="text-lg md:text-xl font-semibold text-[#0056A6] mb-2">
@@ -362,7 +363,7 @@ const Services = () => {
             <motion.div
               variants={itemVariants}
               whileHover={{ scale: 1.03, y: -5 }}
-              className="w-full md:w-[850px] bg-gray-100 shadow-md rounded-2xl p-6 md:p-8 text-left hover:shadow-xl transition relative group"
+              className="w-full md:w-[850px] bg-gray-100 shadow-md rounded-2xl p-6 md:p-8 text-justify hover:shadow-xl transition relative group"
             >
               <Layout className="w-10 h-10 md:w-12 md:h-12 text-[#D62828] mb-4 group-hover:text-red-700 transition-colors" />
               <h3 className="text-lg md:text-xl font-semibold text-[#0056A6] mb-2">
@@ -391,7 +392,7 @@ const Services = () => {
             <motion.div
               variants={itemVariants}
               whileHover={{ scale: 1.03, y: -5 }}
-              className="w-full max-w-md md:w-[450px] bg-gray-100 shadow-md rounded-2xl p-6 md:p-8 text-left hover:shadow-xl transition relative group mt-6 md:mt-0"
+              className="w-full max-w-md md:w-[450px] bg-gray-100 shadow-md rounded-2xl p-6 md:p-8 text-justify hover:shadow-xl transition relative group mt-6 md:mt-0"
             >
               <TrendingUp className="w-10 h-10 md:w-12 md:h-12 text-[#D62828] mb-4 group-hover:text-red-700 transition-colors" />
               <h3 className="text-lg md:text-xl font-semibold text-[#0056A6] mb-2">
@@ -437,7 +438,7 @@ const Services = () => {
             <motion.div
               variants={itemVariants}
               whileHover={{ scale: 1.03, y: -5 }}
-              className="w-full max-w-md md:w-[450px] bg-white shadow-md rounded-2xl p-6 md:p-8 text-left hover:shadow-xl transition relative group"
+              className="w-full max-w-md md:w-[450px] bg-white shadow-md rounded-2xl p-6 md:p-8 text-justify hover:shadow-xl transition relative group"
             >
               <ClipboardList className="w-10 h-10 md:w-12 md:h-12 text-[#D62828] mb-4 group-hover:text-red-700 transition-colors" />
               <h3 className="text-lg md:text-xl font-semibold text-[#0056A6] mb-2">
@@ -489,7 +490,7 @@ const Services = () => {
             <motion.div
               variants={itemVariants}
               whileHover={{ scale: 1.03, y: -5 }}
-              className="w-full md:w-[850px] bg-white shadow-md rounded-2xl p-6 md:p-8 text-left hover:shadow-xl transition relative group mt-6 md:mt-0"
+              className="w-full md:w-[850px] bg-white shadow-md rounded-2xl p-6 md:p-8 text-justify hover:shadow-xl transition relative group mt-6 md:mt-0"
             >
               <DollarSign className="w-10 h-10 md:w-12 md:h-12 text-[#D62828] mb-4 group-hover:text-red-700 transition-colors" />
               <h3 className="text-lg md:text-xl font-semibold text-[#0056A6] mb-2">
