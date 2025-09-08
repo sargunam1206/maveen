@@ -120,7 +120,7 @@ const About = () => {
           industries. We focus on helping businesses to implement World Class
           Manufacturing Practices through Operational Excellence (OpEx) projects.
         </p> */}
-        <p className="p-6 w-full max-w-3xl bg-white rounded-lg font-medium text-sm sm:text-base md:text-lg text-justify sm:text-left">
+        {/* <p className="p-6 w-full max-w-3xl bg-white rounded-lg font-medium text-sm sm:text-base md:text-lg text-justify sm:text-left ">
   We are a team of experienced professionals with deep expertise in{" "}
   <span className="text-[#0050A0]">
     engineering, automotive, textile, food and consumer goods
@@ -128,7 +128,18 @@ const About = () => {
   industries. Our mission is to empower organizations by implementing
   world-class manufacturing practices and operational excellence (OpEx) projects
   that deliver measurable results.
+</p> */}
+<p className="p-6 w-full max-w-3xl bg-white rounded-lg font-medium text-sm sm:text-base md:text-lg text-justify sm:text-left">
+  At Maven Yanim, we are a group of passionate{" "}
+  <span className="text-[#0050A0]">
+    consultants, engineers, and strategists
+  </span>{" "}
+  who believe in turning challenges into opportunities. With a strong foundation
+  in diverse industries, we bring together{" "}
+  <span className="text-[#0050A0]">expertise and innovation</span> to create
+  solutions that are practical, scalable, and impactful.
 </p>
+
 
       </div>
 
@@ -189,7 +200,7 @@ const About = () => {
         successfully implemented OpEx projects for over{" "}
         <span className="text-[#D62828]">40 industries since 2014.</span> With a
         blend of global standards and local expertise, we ensure impactful
-        training, consulting, and process improvement.
+        training, consulting and process improvement.
       </p>
     </div>
   </div>

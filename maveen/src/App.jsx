@@ -3,6 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import ScrollToTop from "./components/ScrollToTop";
 import HomePage from "./pages/HomePage";
 import Services from "./pages/Services";
 import About from "./pages/About";
@@ -23,6 +24,7 @@ function App() {
   return (
     <>
       <Router>
+        <ScrollToTop /> 
         <Navbar />
         <main>
           <Routes>
