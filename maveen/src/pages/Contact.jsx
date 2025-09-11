@@ -16,8 +16,8 @@ const containerStyle = {
 };
 
 const center = {
-  lat: 12.9716, // Replace with your office latitude
-  lng: 77.5946, // Replace with your office longitude
+  lat: 10.684683,
+  lng: 77.001378,
 };
 
 const services = [
