@@ -14,16 +14,22 @@ const Navbar = () => {
   return (
     <>
       <nav className="bg-white shadow-md sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
-          
+        <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-2">
           {/* Logo */}
-          <Link to="/" className="flex items-center text-2xl font-bold gap-2">
-            <img src={Logo} alt="Logo" className="w-10 h-10 object-contain" />
-            <span>
-              <span className="text-[#D62828]">Maven</span>
-              <span className="text-[#0056A6]">Yanim</span>
-
-            </span>
+          <Link to="/" className="flex items-center gap-2">
+            <img src={Logo} alt="Logo" className="w-15 h-15 object-contain" />
+            <div className="flex flex-col leading-tight">
+              <span className="text-3xl font-bold">
+                <span className="text-[#D62828]">Maven</span>
+                <span className="text-[#0056A6]">Yanim</span>
+              </span>
+              <span
+                className="text-[#0056A6] font-bold text-2xl"
+                style={{ fontFamily: "'Dancing Script', cursive" }}
+              >
+                Endeavor to Excellence
+              </span>
+            </div>
           </Link>
 
           {/* Mobile menu button */}
@@ -58,33 +64,49 @@ const Navbar = () => {
           {/* Desktop Menu */}
           <ul className="hidden lg:flex gap-8 font-bold text-lg pr-20">
             <li>
-              <Link 
-                to="/" 
-                className={`${isActive("/") ? "text-[#D62828] font-bold border-b-2 border-[#D62828]" : "text-[#0056A6]"} hover:text-[#D62828] transition-colors pb-1`}
+              <Link
+                to="/"
+                className={`${
+                  isActive("/")
+                    ? "text-[#D62828] font-bold border-b-2 border-[#D62828]"
+                    : "text-[#0056A6]"
+                } hover:text-[#D62828] transition-colors pb-1`}
               >
                 Home
               </Link>
             </li>
             <li>
-              <Link 
-                to="/about" 
-                className={`${isActive("/about") ? "text-[#D62828] font-bold border-b-2 border-[#D62828]" : "text-[#0056A6]"} hover:text-[#D62828] transition-colors pb-1`}
+              <Link
+                to="/about"
+                className={`${
+                  isActive("/about")
+                    ? "text-[#D62828] font-bold border-b-2 border-[#D62828]"
+                    : "text-[#0056A6]"
+                } hover:text-[#D62828] transition-colors pb-1`}
               >
                 About Us
               </Link>
             </li>
             <li>
-              <Link 
-                to="/services" 
-                className={`${isActive("/services") ? "text-[#D62828] font-bold border-b-2 border-[#D62828]" : "text-[#0056A6]"} hover:text-[#D62828] transition-colors pb-1`}
+              <Link
+                to="/services"
+                className={`${
+                  isActive("/services")
+                    ? "text-[#D62828] font-bold border-b-2 border-[#D62828]"
+                    : "text-[#0056A6]"
+                } hover:text-[#D62828] transition-colors pb-1`}
               >
                 Services
               </Link>
             </li>
             <li>
-              <Link 
-                to="/contact" 
-                className={`${isActive("/contact") ? "text-[#D62828] font-bold border-b-2 border-[#D62828]" : "text-[#0056A6]"} hover:text-[#D62828] transition-colors pb-1`}
+              <Link
+                to="/contact"
+                className={`${
+                  isActive("/contact")
+                    ? "text-[#D62828] font-bold border-b-2 border-[#D62828]"
+                    : "text-[#0056A6]"
+                } hover:text-[#D62828] transition-colors pb-1`}
               >
                 Contact
               </Link>
@@ -95,31 +117,45 @@ const Navbar = () => {
         {/* Mobile Dropdown */}
         {menuOpen && (
           <div className="lg:hidden bg-white shadow-md px-4 py-3 space-y-3">
-            <Link 
-              to="/" 
-              onClick={() => setMenuOpen(false)} 
-              className={`block ${isActive("/") ? "text-[#D62828] font-bold" : "text-gray-700"} hover:text-[#0056A6] transition-colors`}
+            <Link
+              to="/"
+              onClick={() => setMenuOpen(false)}
+              className={`block ${
+                isActive("/") ? "text-[#D62828] font-bold" : "text-gray-700"
+              } hover:text-[#0056A6] transition-colors`}
             >
               Home
             </Link>
-            <Link 
-              to="/about" 
-              onClick={() => setMenuOpen(false)} 
-              className={`block ${isActive("/about") ? "text-[#D62828] font-bold" : "text-gray-700"} hover:text-[#0056A6] transition-colors`}
+            <Link
+              to="/about"
+              onClick={() => setMenuOpen(false)}
+              className={`block ${
+                isActive("/about")
+                  ? "text-[#D62828] font-bold"
+                  : "text-gray-700"
+              } hover:text-[#0056A6] transition-colors`}
             >
               About Us
             </Link>
-            <Link 
-              to="/services" 
-              onClick={() => setMenuOpen(false)} 
-              className={`block ${isActive("/services") ? "text-[#D62828] font-bold" : "text-gray-700"} hover:text-[#0056A6] transition-colors`}
+            <Link
+              to="/services"
+              onClick={() => setMenuOpen(false)}
+              className={`block ${
+                isActive("/services")
+                  ? "text-[#D62828] font-bold"
+                  : "text-gray-700"
+              } hover:text-[#0056A6] transition-colors`}
             >
               Services
             </Link>
-            <Link 
-              to="/contact" 
-              onClick={() => setMenuOpen(false)} 
-              className={`block ${isActive("/contact") ? "text-[#D62828] font-bold" : "text-gray-700"} hover:text-[#0056A6] transition-colors`}
+            <Link
+              to="/contact"
+              onClick={() => setMenuOpen(false)}
+              className={`block ${
+                isActive("/contact")
+                  ? "text-[#D62828] font-bold"
+                  : "text-gray-700"
+              } hover:text-[#0056A6] transition-colors`}
             >
               Contact
             </Link>

@@ -25,7 +25,7 @@ const WhyChooseUs = () => {
       icon: <Users className="w-10 h-10 text-[#D62828]" />,
       title: "Expert Trainers",
       description:
-        "Experienced consultants with hands-on industry expertise.",
+        "Qualified and Experienced consultants with hands-on industry expertise.",
     },
     {
       icon: <Clock className="w-10 h-10 text-[#D62828]" />,
@@ -37,22 +37,22 @@ const WhyChooseUs = () => {
       title: "Trust & Fairness",
       description: "Integrity and fairness maintained throughout the process.",
     },
-    {
-      icon: <GraduationCap className="w-10 h-10 text-[#D62828]" />,
-      title: "Qualified Consultants",
-      description:
-        "Certified Lean Six Sigma professionals with cross-industry expertise.",
-    },
+    // {
+    //   icon: <GraduationCap className="w-10 h-10 text-[#D62828]" />,
+    //   title: "Qualified Consultants",
+    //   description:
+    //     "Certified Lean Six Sigma professionals with cross-industry expertise.",
+    // },
   ];
 
   return (
     <section className="bg-white py-16">
       <div className="max-w-7xl mx-auto px-6 text-center">
         {/* Section Title */}
-        <h2 className="text-5xl font-bold text-gray-800 mb-4">
+        <h2 className="text-4xl font-bold text-[#0050A0] mb-4">
           Why Choose Us
         </h2>
-        <p className="text-gray-600 mb-12">
+        <p className="text-gray-600  font-semibold mb-12">
           The <span className="text-[#D62828] font-semibold">Maven Yanim Advantage</span>
         </p>
 

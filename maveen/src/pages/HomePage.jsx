@@ -3,10 +3,10 @@ import Hero from "../components/Hero";
 import Stats from "../components/Stats";
 import Capabilities from "../components/Capabilities";
 import WhyChooseUs from "../components/whychooseus";
-const Home = () => {
+const HomePage = () => {
   return (
     <div>
-      <Hero />
+      <Hero/>
       <Stats />
       <Capabilities />
       <WhyChooseUs />
@@ -14,4 +14,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;

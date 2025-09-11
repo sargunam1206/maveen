@@ -6,7 +6,7 @@ import {
   faArrowUp,
 } from "@fortawesome/free-solid-svg-icons";
 // import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import Logo from "../assets/Logo.png";
+import logo from "../assets/Logo.png";
 
 
 export default function Footer() {
@@ -20,13 +20,21 @@ export default function Footer() {
       <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* Brand Info */}
         <div>
-          <h2 className="flex items-center text-xl font-bold">
-            {/* <span className="bg-white text-blue-700 px-2 py-1 rounded-md mr-2">M</span> */}
-            <img src={Logo} alt="" className="w-9 h-9 rounded-sm m-2" />
-            Maven Yanim
-          </h2>
+          {/* <h2 className="flex items-center text-xl text-[#D62828] font-bold"> */}
+          
+            <img src={logo} alt="" className="w-60 h-20 rounded-sm m-2"  />
+            {/* Maven  */}
+          {/* </h2> */}
+
+           {/* <img src={Logo} alt="Logo" className="w-15 h-15 object-contain" /> */}
+                       {/* <span>
+                         <span className="text-[#D62828]">Maven</span>
+                         <span className="text-[#0056A6]">Yanim</span>
+           
+                       </span> */}
+
           <p className="mt-4 text-gray-200 leading-relaxed">
-            Professional consulting for operational excellence across industries.
+           Endeavor to Excellence
           </p>
         </div>
 
@@ -35,9 +43,9 @@ export default function Footer() {
           <h3 className="text-lg font-semibold mb-4">Services</h3>
           <ul className="space-y-2 text-gray-200">
             <li>OpEx Consulting</li>
-            <li>5S Implementation</li>
+            <li>5S Training & Implementation</li>
             <li>Quality Management</li>
-            <li>Lean Practices</li>
+            <li>Lean Manufacturing Practices</li>
           </ul>
         </div>
 
@@ -56,14 +64,14 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
           <p className="text-gray-300 mb-4 text-sm">
-            MAVEN YANIM – Endeavor to Excellence
+            MAVEN YANIM 
           </p>
           <ul className="space-y-4 text-gray-200 text-sm leading-relaxed">
             <li className="flex items-start">
               <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-3 text-red-500 mt-1" />
               <span>
-                15, VKS Layout Extension, A. Sangampalayam, Pollachi, <br />
-                Coimbatore, Tamil Nadu, India - 642 002
+                15, VKS Layout Extension, <br />A. Sangampalayam, <br />Pollachi - 642 002, <br />
+                Coimbatore, Tamil Nadu, India.
               </span>
             </li>
             <li className="flex items-start">
@@ -76,7 +84,7 @@ export default function Footer() {
             <li className="flex items-start">
               <FontAwesomeIcon icon={faEnvelope} className="mr-3 text-blue-200 mt-1" />
               <span>
-                balak@mavenyanim.in 
+              info@mavenyanim.in
                 {/* <br /> saibalak@mavenyanim.in */}
               </span>
             </li>
@@ -85,11 +93,21 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-gray-400 mt-12 pt-4 text-center text-gray-200 text-sm">
+      {/* <div className="border-t border-gray-400 mt-12 pt-4 text-center text-gray-200 text-sm">
         © 2025 Maven Yanim. All rights reserved. Powered by NeuralArc
-      </div>
-
-     
+      </div> */}
+      {/* Bottom Bar */}
+<div className="border-t border-gray-400 mt-12 pt-4 text-center text-gray-200 text-sm">
+  © 2025 Maven Yanim. All rights reserved. Powered by{" "}
+  <a 
+    href="https://www.neuralarc.com" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+   className="text-white hover:text-yellow-300 font-medium transition-colors duration-200"
+  >
+    NeuralArc
+  </a>
+</div>
 
       {/* Scroll to Top Button */}
       <button

@@ -1,56 +1,43 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import HeroImg from "../assets/hero.jpg"; // Replace with your image path
-import About from "../pages/About";
+import HeroImg from "../assets/hero.png"; // Replace with your image path
 
 const Hero = () => (
   <>
-    <section className="bg-gray-50 py-16">
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-8 px-6">
-        
-        {/* Left: Text */}
-        <div className="flex-1 text-center lg:text-left" data-aos="zoom-in">
-          <h1 className="text-3xl lg:text-4xl font-bold text-[#0056A6] mb-4">
-             Excellence to Execute & Care
-          </h1>
+    <section
+      className="relative bg-cover bg-center h-screen flex items-center"
+      style={{ backgroundImage: `url(${HeroImg})` }}
+    >
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/50"></div>
 
-          {/* <p className="text-lg text-gray-600 mb-3">
-            Excellence to Execute & Care
-          </p> */}
-          <p className="text-lg mb-6">
-            Advisory Services & Business Process Improvement. <br />
-            We help organizations achieve performance through specialized training,
-            consulting, and world-class operational excellence practices.
-          </p>
+      {/* Content */}
+      <div className="relative z-10 max-w-3xl px-6 text-center lg:text-left text-white">
+        <h1 className="text-3xl lg:text-4xl font-bold leading-snug mb-6 ">
+          Advisory Services and Business Process Improvement
+        </h1>
 
-          <div className="flex justify-center lg:justify-start gap-4">
-            <Link
-              to="/about"
-              className="bg-[#D62828] hover:bg-[#004080] text-white px-5 py-2 rounded-lg shadow-md"
-            >
-              More
-            </Link>
-            <Link
-              to="/contact"
-              className="border border-[#0056A6] text-[#0056A6] hover:bg-[#0056A6] hover:text-white px-5 py-2 rounded-lg"
-            >
-              Contact Us
-            </Link>
-          </div>
-        </div>
+        <p className="text-lg lg:text-1xl mb-8">
+          We help organizations improve performance through specialized training, 
+          expert consulting, and World Class Manufacturing Practices.
+        </p>
 
-        {/* Right: Image */}
-        <div className="flex-1 flex justify-center">
-          <img
-            src={HeroImg}
-            alt="Hero"
-            className="rounded-lg shadow-lg max-w-lg w-full"
-            data-aos="fade-up"
-          />
+        <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+          <Link
+            to="/about"
+            className="bg-[#D62828] hover:bg-[#004080] text-white px-4 py-2 rounded-lg shadow-md text-lg font-medium transition"
+          >
+            More
+          </Link>
+          <Link
+            to="/contact"
+            className="border border-[#0056A6] text-[#0056A6] hover:bg-[#0056A6] hover:text-white px-4 py-2 rounded-lg text-lg font-medium transition bg-white/90"
+          >
+            Contact Us
+          </Link>
         </div>
       </div>
     </section>
-    {/* <About /> */}
   </>
 );
 
