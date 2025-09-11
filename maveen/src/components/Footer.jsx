@@ -6,7 +6,7 @@ import {
   faArrowUp,
 } from "@fortawesome/free-solid-svg-icons";
 // import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import logo from "../assets/Logo.png";
+import image from "../assets/image.png";
 
 
 export default function Footer() {
@@ -22,7 +22,7 @@ export default function Footer() {
         <div>
           {/* <h2 className="flex items-center text-xl text-[#D62828] font-bold"> */}
           
-            <img src={logo} alt="" className="w-60 h-20 rounded-sm m-2"  />
+            <img src={image} alt="" className="w-50 h-15 rounded-sm m-2"  />
             {/* Maven  */}
           {/* </h2> */}
 
