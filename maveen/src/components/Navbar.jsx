@@ -24,7 +24,7 @@ const Navbar = () => {
                 <span className="text-[#0056A6]">Yanim</span>
               </span>
               <span
-                className="text-[#0056A6] font-bold text-2xl"
+                className="text-[#0056A6] font-bold text-xl"
                 style={{ fontFamily: "'Dancing Script', cursive" }}
               >
                 Endeavor to Excellence

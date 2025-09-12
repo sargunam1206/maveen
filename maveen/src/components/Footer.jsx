@@ -34,7 +34,7 @@ export default function Footer() {
                        </span> */}
 
           <p className="mt-4 text-gray-200 leading-relaxed">
-           Endeavor to Excellence
+           Advisory Services and Business Process Improvement
           </p>
         </div>
 
