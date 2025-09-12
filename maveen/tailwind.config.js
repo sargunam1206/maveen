@@ -43,10 +43,10 @@ export default {
         },
       },
       fontFamily: {
-        heading: ["Poppins", "sans-serif"],
+        heading: ["Poppins","Georgia", "sans-serif"],
         body: ["Roboto", "sans-serif"],
       },
-    },
+    },z
   },
   plugins: [],
 };
