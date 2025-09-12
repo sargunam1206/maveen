@@ -115,27 +115,35 @@ const About = () => {
         </section>
        
  
-<div className=" bg-gray-100">
-   <h1 className="text-2xl sm:text-3xl md:text-4xl text-center text-[#0050A0] mt-5  font-bold mb-4 ">
+<div className="bg-gray-100">
+  <div className="flex flex-col justify-center items-center py-2 px-6 text-center">
+    <h1 className="text-2xl sm:text-3xl md:text-4xl text-[#0050A0] font-bold mb-5 mt-4">
       Our Mission
     </h1>
-<div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-10 px-6" data-aos="zoom-in">
-  
-  {/* Left Content */}
-  <div className="flex flex-col justify-center">
- 
-    <p className="bg-white text-black p-6 sm:p-8 rounded-lg text-sm sm:text-base md:text-lg font-medium">
-      To empower organizations to achieve sustainable growth by improving
-      efficiency, productivity and quality.
-    </p>
   </div>
+  <div
+    className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-10 px-6"
+    data-aos="zoom-in"
+  >
+    {/* Left Content */}
+    <div className="flex flex-col justify-center">
+      <p className="bg-white text-black p-6 sm:p-8 rounded-lg text-sm sm:text-base md:text-lg font-medium">
+        To empower organizations to achieve sustainable growth by improving
+        efficiency, productivity and quality.
+      </p>
+    </div>
 
-  {/* Right Image */}
-  <div className="flex justify-center" >
-    <img src={mission} alt="Our Mission" className="w-full max-w-md rounded-lg border-2 border-gray-300  hover:shadow-md hover:scale-105 transition transform duration-300" />
+    {/* Right Image */}
+    <div className="flex justify-center">
+      <img
+        src={mission}
+        alt="Our Mission"
+        className="w-full max-w-md rounded-lg border-2 border-gray-300 hover:shadow-md hover:scale-105 transition transform duration-300"
+      />
+    </div>
   </div>
 </div>
-</div>
+
   
 
 <div className="flex flex-col justify-center items-center py-10 px-6">
