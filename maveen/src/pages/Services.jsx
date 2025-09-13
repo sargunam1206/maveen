@@ -50,7 +50,7 @@ const Services = () => {
         transition={{ duration: 0.7 }}
         className="border-gray-700 flex flex-col justify-center items-center py-8 md:py-10 px-4 md:px-6 text-center"
       >
-        <h1 className="text-3xl md:text-4xl text-[#0050A0] font-bold mb-4">
+        <h1 className="text-3xl md:text-[32px] text-[#0050A0] font-bold mb-4">
           Services
         </h1>
         <p className="p-4 md:p-6 w-full max-w-3xl bg-white rounded-lg font-semibold text-sm sm:text-base md:text-lg text-center">            
@@ -68,7 +68,7 @@ const Services = () => {
         className="bg-gray-50 py-12 md:py-16"
       >
         <div className="max-w-8xl mx-auto text-center px-4 md:px-6">
-          <motion.h2 variants={itemVariants} className="text-2xl md:text-3xl text-[#0050A0] font-bold mb-4">
+          <motion.h2 variants={itemVariants} className="text-2xl md:text-[28px] text-[#0050A0] font-bold mb-4">
             Business Process Improvement
           </motion.h2>
           
@@ -89,19 +89,27 @@ const Services = () => {
               </div>
               <div className="flex items-start">
                 <ChevronDoubleRightIcon className="w-4 h-4 md:w-5 md:h-5 text-[#0056A6] mt-1 mr-2" />
-                <p className="text-sm md:text-base">TPM</p>
+                <p className="text-sm md:text-base">Total Productive Maintenance (TPM)</p>
               </div>
               <div className="flex items-start">
                 <ChevronDoubleRightIcon className="w-4 h-4 md:w-5 md:h-5 text-[#0056A6] mt-1 mr-2" />
-                <p className="text-sm md:text-base">SMED</p>
+                <p className="text-sm md:text-base">Quick Change Over (SMED)</p>
               </div>
               <div className="flex items-start">
                 <ChevronDoubleRightIcon className="w-4 h-4 md:w-5 md:h-5 text-[#0056A6] mt-1 mr-2" />
-                <p className="text-sm md:text-base">DMAIC</p>
+                <p className="text-sm md:text-base">Quality Improvement (DMAIC, 8D)</p>
               </div>
               <div className="flex items-start">
                 <ChevronDoubleRightIcon className="w-4 h-4 md:w-5 md:h-5 text-[#0056A6] mt-1 mr-2" />
-                <p className="text-sm md:text-base">PPC</p>
+                <p className="text-sm md:text-base">Continuous Flow</p>
+              </div>
+              <div className="flex items-start">
+                <ChevronDoubleRightIcon className="w-4 h-4 md:w-5 md:h-5 text-[#0056A6] mt-1 mr-2" />
+                <p className="text-sm md:text-base">Pull Production System (PPC, Heijunka, Kanban)</p>
+              </div>
+              <div className="flex items-start">
+                <ChevronDoubleRightIcon className="w-4 h-4 md:w-5 md:h-5 text-[#0056A6] mt-1 mr-2" />
+                <p className="text-sm md:text-base">Daily Work Management</p>
               </div>
               <div className="absolute bottom-0 left-0 h-1 w-0 bg-[#0056A6] group-hover:w-full transition-all rounded-b-2xl"></div>
             </motion.div>
@@ -118,7 +126,19 @@ const Services = () => {
               </h3>
               <div className="flex items-start">
                 <ChevronDoubleRightIcon className="w-4 h-4 md:w-5 md:h-5 text-[#0056A6] mt-1 mr-2" />
-                <p className="text-sm md:text-base">TQM overview</p>
+                <p className="text-sm md:text-base">TQM overview for Senior Leaders</p>
+              </div>
+              <div className="flex items-start">
+                <ChevronDoubleRightIcon className="w-4 h-4 md:w-5 md:h-5 text-[#0056A6] mt-1 mr-2" />
+                <p className="text-sm md:text-base">Formation of TQM Steering Committee</p>
+              </div>
+              <div className="flex items-start">
+                <ChevronDoubleRightIcon className="w-4 h-4 md:w-5 md:h-5 text-[#0056A6] mt-1 mr-2" />
+                <p className="text-sm md:text-base">Training of Steering Committee Members</p>
+              </div>
+              <div className="flex items-start">
+                <ChevronDoubleRightIcon className="w-4 h-4 md:w-5 md:h-5 text-[#0056A6] mt-1 mr-2" />
+                <p className="text-sm md:text-base">Diagnostic Survey and Gap Identification</p>
               </div>
               <div className="flex items-start">
                 <ChevronDoubleRightIcon className="w-4 h-4 md:w-5 md:h-5 text-[#0056A6] mt-1 mr-2" />
@@ -127,6 +147,10 @@ const Services = () => {
               <div className="flex items-start">
                 <ChevronDoubleRightIcon className="w-4 h-4 md:w-5 md:h-5 text-[#0056A6] mt-1 mr-2" />
                 <p className="text-sm md:text-base">TQM Application Assessments</p>
+              </div>
+              <div className="flex items-start">
+                <ChevronDoubleRightIcon className="w-4 h-4 md:w-5 md:h-5 text-[#0056A6] mt-1 mr-2" />
+                <p className="text-sm md:text-base">Need Based Training and Facilitation</p>
               </div>
               <div className="absolute bottom-0 left-0 h-1 w-0 bg-[#0056A6] group-hover:w-full transition-all rounded-b-2xl"></div>
             </motion.div>
@@ -176,7 +200,7 @@ const Services = () => {
         className="bg-white py-12 md:py-16"
       >
         <div className="max-w-8xl mx-auto text-center px-4 md:px-6">
-          <motion.h2 variants={itemVariants} className="text-2xl md:text-3xl font-bold text-[#0050A0] mb-4">
+          <motion.h2 variants={itemVariants} className="text-2xl md:text-[28px] font-bold text-[#0050A0] mb-4">
             Quality Improvement
           </motion.h2>
 
@@ -197,11 +221,11 @@ const Services = () => {
               </div>
               <div className="flex items-start">
                 <ChevronDoubleRightIcon className="w-29 h-4 md:w-18 md:h-5 text-[#0056A6] mt-1 mr-2" />
-                <p className="text-sm md:text-base">Stop Time Quality Process from Diagram, PFMEA, Action plan for reduction in high IPPN which results in Control Plan, Final Piece Inspection, Check list, Visual Work Instruction, Visual TPM Sheet, Pole–cycle gauges for built in quality in production, Skill / Training Matrix, CDPD reduction, Corrective &amp; Preventive action, Reports &amp;Capability mapping, Internal Audits.</p>
+                <p className="text-sm md:text-base">Shop Quality-Process from Diagram, PFMEA, Action plan for reduction in high RPN which results in Control Plan, First Piece Inspection, Check list, Visual Work Instruction, Visual TPM Sheet, Poka-yoke gauges for built in quality in production, Skill / Training Matrix, CDPQ reduction, Corrective &amp; Preventive action, Reports &amp; Capability mapping, Internal Audits.</p>
               </div>
               <div className="flex items-start">
                 <ChevronDoubleRightIcon className="w-7 h-4 md:w-5 md:h-5 text-[#0056A6] mt-1 mr-2" />
-                <p className="text-sm md:text-base">Establish Quality System from raw material to dispatch in line with DNS.</p>
+                <p className="text-sm md:text-base">Establish Quality System from raw material to dispatch in line with QMS.</p>
               </div>
               <div className="absolute bottom-0 left-0 h-1 w-0 bg-[#0056A6] group-hover:w-full transition-all rounded-b-2xl"></div>
             </motion.div>
@@ -259,7 +283,7 @@ const Services = () => {
         className="bg-gray-50 py-12 md:py-16"
       >
         <div className="max-w-8xl mx-auto text-center px-4 md:px-6">
-          <motion.h2 variants={itemVariants} className="text-2xl md:text-3xl font-bold text-[#0050A0] mb-4">
+          <motion.h2 variants={itemVariants} className="text-2xl md:text-[28px] font-bold text-[#0050A0] mb-4">
             System Improvement
           </motion.h2>
 
@@ -276,7 +300,7 @@ const Services = () => {
               </h3>
               <div className="flex items-start">
                 <ChevronDoubleRightIcon className="w-4 h-4 md:w-5 md:h-5 text-[#0056A6] mt-1 mr-2" />
-                <p className="text-sm md:text-base">Training and implementation in 5s, Visual and Ergonomics</p>
+                <p className="text-sm md:text-base">Training and implementation in 5s, Visual Management and Ergonomics</p>
               </div>
               <div className="flex items-start">
                 <ChevronDoubleRightIcon className="w-4 h-4 md:w-5 md:h-5 text-[#0056A6] mt-1 mr-2" />
@@ -292,7 +316,7 @@ const Services = () => {
               </div>
               <div className="flex items-start">
                 <ChevronDoubleRightIcon className="w-4 h-4 md:w-5 md:h-5 text-[#0056A6] mt-1 mr-2" />
-                <p className="text-sm md:text-base">Material management system and kanban</p>
+                <p className="text-sm md:text-base">Material Management system and kanban</p>
               </div>
               <div className="absolute bottom-0 left-0 h-1 w-0 bg-[#0056A6] group-hover:w-full transition-all rounded-b-2xl"></div>
             </motion.div>
@@ -354,7 +378,7 @@ const Services = () => {
         className="bg-white py-12 md:py-16"
       >
         <div className="max-w-8xl mx-auto text-center px-4 md:px-6">
-          <motion.h2 variants={itemVariants} className="text-2xl md:text-3xl font-bold text-[#0050A0] mb-4">
+          <motion.h2 variants={itemVariants} className="text-2xl md:text-[28px] font-bold text-[#0050A0] mb-4">
             Workplace Improvement
           </motion.h2>
 
@@ -371,7 +395,7 @@ const Services = () => {
               </h3>
               <div className="flex items-start">
                 <ChevronDoubleRightIcon className="w-8 h-4 md:w-5 md:h-5 text-[#0056A6] mt-1 mr-2" />
-                <p className="text-sm md:text-base">Assessment of current layout for space, distance, lead time, VPN capacity and manpower</p>
+                <p className="text-sm md:text-base">Assessment of current layout for space, distance, lead time, WIP, capacity and manpower</p>
               </div>
               <div className="flex items-start">
                 <ChevronDoubleRightIcon className="w-9 h-4 md:w-5 md:h-5 text-[#0056A6] mt-1 mr-2" />
@@ -379,7 +403,7 @@ const Services = () => {
               </div>
               <div className="flex items-start">
                 <ChevronDoubleRightIcon className="w-18 h-4 md:w-10 md:h-5 text-[#0056A6] mt-1 mr-2" />
-                <p className="text-sm md:text-base">Plant layout using Heijunka and Lean concept such as Value Stream Map, Route Map, Gemba Walk, reduction in data &amp; material movement, operator utilization (MOP), TAKT time, FIFO, Floor Space utilization, Quality - TPM aspect</p>
+                <p className="text-sm md:text-base">Plant layout using Heijunka and Lean concept such as Value Stream Map, Route Map - Seiryu'ka, reduction in main &amp; material movement, operator utilization (MOP), TAKT time, FIFO, Floor Space utilization, Quality - TPM aspect</p>
               </div>
               <div className="flex items-start">
                 <ChevronDoubleRightIcon className="w-8 h-4 md:w-5 md:h-5 text-[#0056A6] mt-1 mr-2" />
@@ -400,11 +424,11 @@ const Services = () => {
               </h3>
               <div className="flex items-start">
                 <ChevronDoubleRightIcon className="w-4 h-4 md:w-5 md:h-5 text-[#0056A6] mt-1 mr-2" />
-                <p className="text-sm md:text-base">SMED</p>
+                <p className="text-sm md:text-base">Quick Change Over (SMED)</p>
               </div>
               <div className="flex items-start">
                 <ChevronDoubleRightIcon className="w-4 h-4 md:w-5 md:h-5 text-[#0056A6] mt-1 mr-2" />
-                <p className="text-sm md:text-base">SWCT</p>
+                <p className="text-sm md:text-base">Standard Work Combination Table (SWCT)</p>
               </div>
               <div className="flex items-start">
                 <ChevronDoubleRightIcon className="w-4 h-4 md:w-5 md:h-5 text-[#0056A6] mt-1 mr-2" />
@@ -453,7 +477,7 @@ const Services = () => {
               </div>
               <div className="flex items-start">
                 <ChevronDoubleRightIcon className="w-4 h-4 md:w-5 md:h-5 text-[#0056A6] mt-1 mr-2" />
-                <p className="text-sm md:text-base">Develop tracking of product performance</p>
+                <p className="text-sm md:text-base">Develop tracking of operator performance</p>
               </div>
               <div className="flex items-start">
                 <ChevronDoubleRightIcon className="w-4 h-4 md:w-5 md:h-5 text-[#0056A6] mt-1 mr-2" />
@@ -469,7 +493,7 @@ const Services = () => {
               </div>
               <div className="flex items-start">
                 <ChevronDoubleRightIcon className="w-4 h-4 md:w-5 md:h-5 text-[#0056A6] mt-1 mr-2" />
-                <p className="text-sm md:text-base">Graph the actual items; the plan every day</p>
+                <p className="text-sm md:text-base">Graph the actual versus the plan every day</p>
               </div>
               <div className="flex items-start">
                 <ChevronDoubleRightIcon className="w-4 h-4 md:w-5 md:h-5 text-[#0056A6] mt-1 mr-2" />

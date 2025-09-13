@@ -19,7 +19,7 @@ const Hero = () => (
 
         <p className="text-lg lg:text-xl mb-8">
           We help organizations improve performance through specialized training,
-          expert consulting, and World Class Manufacturing Practices.
+          expert consulting and World Class Manufacturing Practices.
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4">
