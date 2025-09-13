@@ -97,7 +97,7 @@ const About = () => {
           {/* <p className="text-xl text-maven-gray max-w-3xl mx-auto leading-relaxed">            
   Maven Yanim is a trusted consulting partner committed to driving business
   growth and operational excellence. We deliver tailored solutions that combine
-  industry expertise, proven methodologies, and innovation to help organizations
+  industry expertise, proven methodologies and innovation to help organizations
   achieve sustainable transformation.
 </p> */}
 
@@ -105,12 +105,12 @@ const About = () => {
           <p className="text-xl text-maven-gray max-w-3xl mx-auto leading-relaxed text-justify">
     <span className="ms-5">At</span> Maven Yanim, we are a group of passionate{" "}
   <span className="text-[#0050A0]">
-    consultants, engineers, and strategists
+    consultants, engineers and strategists
   </span>{" "}
   who believe in turning challenges into opportunities. With a strong foundation
   in diverse industries, we bring together{" "}
   <span className="text-[#0050A0]">expertise and innovation</span> to create
-  solutions that are practical, scalable, and impactful.
+  solutions that are practical, scalable and impactful.
 </p>
         </section>
        
