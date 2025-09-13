@@ -90,8 +90,8 @@ const About = () => {
   return (
     <>
       <div className="border-b border-gray-400">
-        <section className=" border-gray-700 flex flex-col justify-center items-center py-10 px-6 text-center"  data-aos="zoom-in">
-          <h1 className="text-4xl text-[#0050A0] font-bold mb-4">
+        <section className=" border-gray-700 flex flex-col justify-center items-center py-10 px-6 "  data-aos="zoom-in">
+          <h1 className="text-[28px] text-[#0050A0] font-bold mb-4 text-center">
             About Maven Yanim
           </h1>
           {/* <p className="text-xl text-maven-gray max-w-3xl mx-auto leading-relaxed">            
@@ -102,8 +102,8 @@ const About = () => {
 </p> */}
 
  
-          <p className="text-xl text-maven-gray max-w-3xl mx-auto leading-relaxed">
-  At Maven Yanim, we are a group of passionate{" "}
+          <p className="text-xl text-maven-gray max-w-3xl mx-auto leading-relaxed text-justify">
+    <span className="ms-5">At</span> Maven Yanim, we are a group of passionate{" "}
   <span className="text-[#0050A0]">
     consultants, engineers, and strategists
   </span>{" "}
@@ -115,9 +115,9 @@ const About = () => {
         </section>
        
  
-<div className="bg-gray-100">
+<div className="bg-gray-50">
   <div className="flex flex-col justify-center items-center py-2 px-6 text-center">
-    <h1 className="text-2xl sm:text-3xl md:text-4xl text-[#0050A0] font-bold mb-5 mt-4">
+    <h1 className="text-[28px] lg:text-[28px] sm:text-2xl md:text-2xl text-[#0050A0] font-bold mb-5 mt-4">
       Our Mission
     </h1>
   </div>
@@ -127,7 +127,7 @@ const About = () => {
   >
     {/* Left Content */}
     <div className="flex flex-col justify-center">
-      <p className="bg-white text-black p-6 sm:p-8 rounded-lg text-sm sm:text-base md:text-lg font-medium">
+      <p className="bg-white text-black p-6 sm:p-8 rounded-lg text-sm sm:text-base md:text-xl font-medium">
         To empower organizations to achieve sustainable growth by improving
         efficiency, productivity and quality.
       </p>
@@ -147,7 +147,7 @@ const About = () => {
   
 
 <div className="flex flex-col justify-center items-center py-10 px-6">
-  <h1 className="text-2xl sm:text-3xl md:text-4xl text-[#0050A0] font-bold mb-4 mt-4 text-center">
+  <h1 className="text-[28px] lg:text-[28px] sm:text-2xl md:text-2xl text-[#0050A0] font-bold mb-4 mt-4 text-center">
     Our Team
   </h1>
 
@@ -170,7 +170,7 @@ const About = () => {
       <p className="text-gray-700 font-medium text-sm sm:text-base md:text-lg text-justify">
         <FontAwesomeIcon
         icon={faUsers}
-        className="text-[#D62828] text-3xl sm:text-4xl pr-4 "
+        className="text-[#D62828] text-xl sm:text-4xl pr-4 "
       /> Our consultants bring extensive experience and have
         successfully implemented OpEx projects for over{" "}
         <span className="text-[#D62828]">40 industries since 2014.</span> With a
@@ -181,9 +181,9 @@ const About = () => {
   </div>
 </div>
 
-<div className=" bg-gray-100">
+<div className=" bg-gray-50">
  <div className="flex flex-col justify-center items-center py-2 px-6 text-center ">
-          <h1 className="text-[#0050A0] font-bold text-4xl mb-5 mt-4">
+          <h1 className="text-[#0050A0] font-bold text-[28px] mb-5 mt-4">
             Operational Excellence (OpEx)
           </h1>
           <p className="p-3 text-xl max-w-3xl">
@@ -206,7 +206,7 @@ const About = () => {
         
         
         <div className="flex flex-col justify-center items-center ">
-          <h1 className="text-4xl text-[#0050A0] mb-5 mt-6 font-bold">
+          <h1 className="text-[28px] text-[#0050A0] mb-5 mt-6 font-bold">
             Our Methodology
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-5 px-10" >
@@ -222,18 +222,18 @@ const About = () => {
         </div>
        
         <div className="flex flex-col justify-center items-center bg-[#0050A0] text-white px-6">
-  <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 mt-4 text-center">
+  <h1 className="text-[28px] sm:text-[28px] md:text-[28px] font-bold mb-4 mt-4 text-center">
     Ready to Transform Your Operations?
   </h1>
-  <p className="text-base sm:text-lg md:text-2xl w-full max-w-2xl text-center p-3">
+  <p className="text-base sm:text-lg md:text-xl w-full max-w-2xl text-center p-3">
     Let's discuss how Maven Yanim can help your organization achieve
     operational excellence and sustainable growth.
   </p>
   <div className="flex flex-col sm:flex-row gap-4 mb-6 mt-3">
-    <button className="bg-red-600 text-white font-semibold px-6 py-3 rounded-md shadow-md hover:bg-red-700 transition">
+    <button className="bg-red-600 text-white font-semibold px-4 py-2 rounded-md shadow-md hover:bg-red-700 transition">
       <Link to="/contact">Get Started</Link>
     </button>
-    <button className="border-2 border-white text-white font-semibold px-6 py-3 rounded-md hover:bg-white hover:text-blue-700 transition">
+    <button className="border-2 border-white text-white font-semibold px-4 py-2 rounded-md hover:bg-white hover:text-blue-700 transition">
       <Link to="/services">Learn More</Link>
     </button>
   </div>

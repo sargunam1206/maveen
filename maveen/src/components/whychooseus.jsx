@@ -34,7 +34,7 @@ const WhyChooseUs = () => {
     },
     {
       icon: <ShieldCheck className="w-10 h-10 text-[#D62828]" />,
-      title: "Trust & Fairness",
+      title: "Trust & Integrity",
       description: "Integrity and fairness maintained throughout the process.",
     },
     // {
@@ -49,7 +49,7 @@ const WhyChooseUs = () => {
     <section className="bg-white py-16">
       <div className="max-w-7xl mx-auto px-6 text-center">
         {/* Section Title */}
-        <h2 className="text-4xl font-bold text-[#0050A0] mb-4">
+        <h2 className="text-[28px] font-bold text-[#0050A0] mb-4">
           Why Choose Us
         </h2>
         <p className="text-gray-600  font-semibold mb-12">
@@ -65,7 +65,7 @@ const WhyChooseUs = () => {
             data-aos="zoom-in-down"
            >
               <div className="mb-4">{item.icon}</div>
-              <h3 className="text-2xl font-semibold text-[#0056A6] mb-2">
+              <h3 className="text-xl font-semibold text-[#0056A6] mb-2">
                 {item.title}
               </h3>
               <p className="text-gray-600">{item.description}</p>

@@ -27,7 +27,7 @@ const Capabilities = () => {
       <div className="max-w-7xl mx-auto text-center px-6" data-aos="fade-up"
      data-aos-anchor-placement="top-bottom">
         {/* Section Title */}
-        <h2 className="text-4xl font-bold text-[#0050A0] mb-4">
+        <h2 className="text-[28px] font-bold text-[#0050A0] mb-4">
           Our Core Services
         </h2>
         <p className="text-gray-600 mb-12">
@@ -45,7 +45,7 @@ const Capabilities = () => {
               transition={{ type: "spring", stiffness: 200, damping: 12 }}
             >
               <div className="mb-4">{cap.icon}</div>
-              <h3 className="text-2xl font-semibold text-[#0056A6] mb-2">
+              <h3 className="text-xl font-semibold text-[#0056A6] mb-2">
                 {cap.title}
               </h3>
               <p className="text-gray-600">{cap.description}</p>

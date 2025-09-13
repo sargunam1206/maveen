@@ -477,7 +477,7 @@ const Contact = () => {
       {/* Hero Section */}
       <section className="bg-white py-16" data-aos="zoom-in">
         <div className="container mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-4xl font-heading font-bold text-[#0050A0] mb-6">
+          <h1 className="text-[28px] lg:text-[28px] md:text-[28px] font-heading font-bold text-[#0050A0] mb-6">
             Contact Us
           </h1>
           <p className="text-xl text-maven-gray max-w-3xl mx-auto leading-relaxed">
@@ -503,7 +503,7 @@ const Contact = () => {
       )}
 
       {/* Contact Form & Info */}
-      <section className="py-10 bg-gray-200">
+      <section className="py-5 bg-gray-200">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12">
@@ -518,7 +518,7 @@ const Contact = () => {
 
                 <form
                   method="POST"
-                  className="grid md:grid-cols-2 gap-4"
+                  className="grid md:grid-cols-2 gap-1"
                   onSubmit={handleSubmit}
                 >
                   {/* Disable captcha */}
@@ -644,7 +644,7 @@ const Contact = () => {
                     </label>
                     <textarea
                       name="message"
-                      rows="3"
+                      rows="2"
                       required
                       className="w-full px-3 py-2 border border-gray-300 rounded-md focus:border-maven-red focus:outline-none resize-vertical"
                     ></textarea>
@@ -663,8 +663,8 @@ const Contact = () => {
               </div>
 
               {/* Contact Information */}
-              <div className="space-y-8" data-aos="zoom-in-left">
-                <div className="bg-white rounded-lg shadow-lg p-8">
+              <div className="space-y-10" data-aos="zoom-in-left">
+                <div className="bg-white rounded-lg shadow-lg p-13">
                   <h2 className="text-2xl font-heading font-bold text-maven-blue mb-6">
                     Get In Touch
                   </h2>

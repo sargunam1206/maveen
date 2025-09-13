@@ -34,7 +34,7 @@ export default function Footer() {
                        </span> */}
 
           <p className="mt-4 text-gray-200 leading-relaxed">
-           Advisory Services and Business Process Improvement
+          Technical and Management Advisory Services, Business Process Improvement
           </p>
         </div>
 
@@ -43,9 +43,11 @@ export default function Footer() {
           <h3 className="text-lg font-semibold mb-4">Services</h3>
           <ul className="space-y-2 text-gray-200">
             <li>OpEx Consulting</li>
+            <li>Management Consulting</li>
             <li>5S Training & Implementation</li>
             <li>Quality Management</li>
             <li>Lean Manufacturing Practices</li>
+            <li>World Class Manufacturing Practices</li>
           </ul>
         </div>
 
@@ -57,15 +59,17 @@ export default function Footer() {
             <li>Automotive</li>
             <li>Textile</li>
             <li>Food & Consumer Goods</li>
+            <li>Educational Industries</li>
+            <li>Processing</li>
           </ul>
         </div>
 
         {/* Contact */}
         <div>
           <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
-          <p className="text-gray-300 mb-4 text-sm">
+          {/* <p className="text-gray-300 mb-4 text-sm">
             MAVEN YANIM 
-          </p>
+          </p> */}
           <ul className="space-y-4 text-gray-200 text-sm leading-relaxed">
             <li className="flex items-start">
               <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-3 text-red-500 mt-1" />

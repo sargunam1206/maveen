@@ -13,25 +13,25 @@ const Hero = () => (
 
       {/* Content */}
       <div className="relative z-10 max-w-3xl px-6 text-center text-white">
-        <h1 className="text-3xl lg:text-4xl font-bold leading-snug mb-6">
+        <h1 className="text-2xl lg:text-[28px] font-bold leading-snug mb-6">
           Advisory Services and Business Process Improvement
         </h1>
 
-        <p className="text-lg lg:text-xl mb-8">
+        <p className="text-xl lg:text-xl mb-8">
           We help organizations improve performance through specialized training,
-          expert consulting, and World Class Manufacturing Practices.
+          expert consulting and World Class Manufacturing Practices.
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <Link
             to="/about"
-            className="bg-[#D62828] hover:bg-[#004080] text-white px-6 py-3 rounded-lg shadow-md text-lg font-medium transition"
+            className="bg-[#D62828] hover:bg-[#004080] text-white px-4 py-2 rounded-lg shadow-md text-lg font-medium transition"
           >
-            More
+          learn  More
           </Link>
           <Link
             to="/contact"
-            className="border border-[#0056A6] text-[#0056A6] hover:bg-[#0056A6] hover:text-white px-6 py-3 rounded-lg text-lg font-medium transition bg-white/90"
+            className="border border-[#0056A6] text-[#0056A6] hover:bg-[#0056A6] hover:text-white px-4 py-2 rounded-lg text-lg font-medium transition bg-white/90"
           >
             Contact Us
           </Link>
