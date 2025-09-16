@@ -40,7 +40,7 @@ export default function Footer() {
 
         {/* Services */}
         <div>
-          <h3 className="text-lg font-semibold mb-4">Services</h3>
+          <h3 className="text-2xl font-semibold mb-4">Services</h3>
           <ul className="space-y-2 text-gray-200">
             <li>OpEx Consulting</li>
             <li>Management Consulting</li>
@@ -53,20 +53,20 @@ export default function Footer() {
 
         {/* Industries */}
         <div>
-          <h3 className="text-lg font-semibold mb-4">Industries</h3>
+          <h3 className="text-2xl font-semibold mb-4">Industries</h3>
           <ul className="space-y-2 text-gray-200">
             <li>Engineering</li>
             <li>Automotive</li>
             <li>Textile</li>
             <li>Food & Consumer Goods</li>
-            <li>Educational Industries</li>
+            <li>Educational </li>
             <li>Processing</li>
           </ul>
         </div>
 
         {/* Contact */}
         <div>
-          <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
+          <h3 className="text-2xl font-semibold mb-4">Contact Us</h3>
           {/* <p className="text-gray-300 mb-4 text-sm">
             MAVEN YANIM 
           </p> */}

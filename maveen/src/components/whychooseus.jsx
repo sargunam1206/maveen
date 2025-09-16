@@ -49,12 +49,12 @@ const WhyChooseUs = () => {
     <section className="bg-white py-16">
       <div className="max-w-7xl mx-auto px-6 text-center">
         {/* Section Title */}
-        <h2 className="text-[28px] font-bold text-[#0050A0] mb-4">
+        <h2 className="text-[28px] font-bold text-[#0050A0] mb-8">
           Why Choose Us
         </h2>
-        <p className="text-gray-600  font-semibold mb-12">
+        {/* <p className="text-gray-600  font-semibold mb-12">
           The <span className="text-[#D62828] font-semibold">Maven Yanim Advantage</span>
-        </p>
+        </p> */}
 
         {/* Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

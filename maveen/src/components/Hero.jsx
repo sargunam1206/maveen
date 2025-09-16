@@ -27,7 +27,7 @@ const Hero = () => (
             to="/about"
             className="bg-[#D62828] hover:bg-[#004080] text-white px-4 py-2 rounded-lg shadow-md text-lg font-medium transition"
           >
-          learn  More
+          Learn  More
           </Link>
           <Link
             to="/contact"

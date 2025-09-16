@@ -53,7 +53,7 @@ const Services = () => {
         <h1 className="text-xl md:text-[28px] text-[#0050A0] font-bold mb-4">
           Services
         </h1>
-        <p className="p-4 md:p-6 w-full max-w-3xl bg-white rounded-lg font-semibold text-sm sm:text-base md:text-lg text-center">            
+        <p className="p-4 md:p-6 w-full max-w-3xl bg-white rounded-lg font-semibold text-sm sm:text-base md:text-lg text-justify ">            
           {/* Our services are crafted with your success in mind, ensuring innovative solutions that adapt to your unique challenges. */}
           We design our services to drive your success, delivering innovative solutions tailored to your unique challenges.
         </p>

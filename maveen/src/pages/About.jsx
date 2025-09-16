@@ -102,8 +102,8 @@ const About = () => {
 </p> */}
 
  
-          <p className="text-xl text-maven-gray max-w-3xl mx-auto leading-relaxed text-justify">
-    <span className="ms-5">At</span> Maven Yanim, we are a group of passionate{" "}
+          <p className="text-xl text-maven-gray max-w-3xl mx-auto leading-relaxed text-justify ">
+    At Maven Yanim, we are a group of passionate{" "}
   <span className="text-[#0050A0]">
     consultants, engineers and strategists
   </span>{" "}
@@ -152,15 +152,15 @@ const About = () => {
   </h1>
 
   {/* Main container */}
-  <div className="flex flex-col sm:flex-row items-center gap-6 bg-white  border-2 border-gray-200
-  rounded-lg px-13 py-4 w-full max-w-5xl" data-aos="zoom-in">
+  <div className="flex flex-col sm:flex-row items-center gap-6 bg-white  
+  rounded-lg px-13 py-4 w-full " data-aos="zoom-in">
 
     {/* Left Side: Image */}
-    <div className="w-full sm:w-1/2  h-75 flex justify-center">
+    <div className="w-full sm:w-1/2  h-80 flex justify-center">
       <img
         src={team}
         alt="Team"
-        className="rounded-lg shadow-md"
+        className="rounded-lg shadow-md border-2 border-gray-300 w-full max-w-md hover:shadow-lg hover:scale-105 transition transform duration-300"
       />
     </div>
 
