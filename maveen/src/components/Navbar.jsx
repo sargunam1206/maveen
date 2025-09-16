@@ -19,10 +19,12 @@ const Navbar = () => {
           <Link to="/" className="flex items-center gap-2">
             <img src={Logo} alt="Logo" className="w-15 h-15 object-contain" />
             <div className="flex flex-col leading-tight">
-              <span className="text-3xl font-bold">
+              <span className="text-3xl font-bold flex items-center gap-1">
                 <span className="text-[#D62828]">Maven</span>
                 <span className="text-[#0056A6]">Yanim</span>
+                <sup className="text-[#D62828] text-sm font-bold">TM</sup>
               </span>
+
               <span
                 className="text-[#0056A6] font-bold text-xl"
                 style={{ fontFamily: "'Dancing Script', cursive" }}

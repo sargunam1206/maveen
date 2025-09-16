@@ -223,7 +223,7 @@ Our goal is to empower you with tailored solutions that drive growth and efficie
               </div>
               <div className="flex items-start">
                 <ChevronDoubleRightIcon className="w-29 h-4 md:w-18 md:h-5 text-[#0056A6] mt-1 mr-2" />
-                <p className="text-sm md:text-base">Shop Quality-Process from Diagram, PFMEA, Action plan for reduction in high RPN which results in Control Plan, First Piece Inspection, Check list, Visual Work Instruction, Visual TPM Sheet, Poka-yoke gauges for built in quality in production, Skill / Training Matrix, CDPQ reduction, Corrective &amp; Preventive action, Reports &amp; Capability mapping, Internal Audits.</p>
+                <p className="text-sm md:text-base">Shop Quality-Process from Diagram, PFMEA, Action plan for reduction in high RPN which results in Control Plan, First Piece Inspection, Check list, Visual Work Instruction, Visual TPM Sheet, Poka-yoke gauges for built-in quality in production, Skill / Training Matrix, COPQ reduction, Corrective &amp; Preventive action, Reports &amp; Capability mapping, Internal Audits.</p>
               </div>
               <div className="flex items-start">
                 <ChevronDoubleRightIcon className="w-7 h-4 md:w-5 md:h-5 text-[#0056A6] mt-1 mr-2" />
@@ -318,7 +318,7 @@ Our goal is to empower you with tailored solutions that drive growth and efficie
               </div>
               <div className="flex items-start">
                 <ChevronDoubleRightIcon className="w-4 h-4 md:w-5 md:h-5 text-[#0056A6] mt-1 mr-2" />
-                <p className="text-sm md:text-base">Material Management system and kanban</p>
+                <p className="text-sm md:text-base">Material Management system and Kanban</p>
               </div>
               <div className="absolute bottom-0 left-0 h-1 w-0 bg-[#0056A6] group-hover:w-full transition-all rounded-b-2xl"></div>
             </motion.div>
@@ -405,7 +405,7 @@ Our goal is to empower you with tailored solutions that drive growth and efficie
               </div>
               <div className="flex items-start">
                 <ChevronDoubleRightIcon className="w-18 h-4 md:w-10 md:h-5 text-[#0056A6] mt-1 mr-2" />
-                <p className="text-sm md:text-base">Plant layout using Heijunka and Lean concept such as Value Stream Map, Route Map - Seiryu'ka, reduction in main &amp; material movement, operator utilization (MOP), TAKT time, FIFO, Floor Space utilization, Quality - TPM aspect</p>
+                <p className="text-sm md:text-base">Plant layout using Heijunka and Lean concept such as Value Stream Map, Route Map - Seiryu'ka, reduction in Main &amp; material movement, operator utilization (MOP), TAKT time, FIFO, Floor Space utilization, Quality - TPM aspect</p>
               </div>
               <div className="flex items-start">
                 <ChevronDoubleRightIcon className="w-8 h-4 md:w-5 md:h-5 text-[#0056A6] mt-1 mr-2" />
@@ -467,11 +467,11 @@ Our goal is to empower you with tailored solutions that drive growth and efficie
               className="w-full md:w-[650px] bg-white shadow-md rounded-2xl p-6 md:p-8 text-justify hover:shadow-xl transition relative group mt-6 md:mt-0"
             >
               <ClipboardList className="w-10 h-10 md:w-12 md:h-12 text-[#D62828] mb-4 group-hover:text-red-700 transition-colors" />
-              <h3 className="text-lg md:text-xl font-semibold text-[#0056A6] mb-2">
+              <h3 className="text-xl md:text-xl font-semibold text-[#0056A6] mb-2">
                 Daily work management and Sustenance:
               </h3>
-              <h4 className="text-lg md:text-xl font-semibold text-[#0056A6] mb-2">
-                KPI Tracking and Sustenance
+              <h4 className="text-lg md:text-lg font-semibold text-[#0056A6] mb-2">
+                KRA Tracking and Sustenance
               </h4>
               <div className="flex items-start">
                 <ChevronDoubleRightIcon className="w-4 h-4 md:w-5 md:h-5 text-[#0056A6] mt-1 mr-2" />
@@ -499,7 +499,7 @@ Our goal is to empower you with tailored solutions that drive growth and efficie
               </div>
               <div className="flex items-start">
                 <ChevronDoubleRightIcon className="w-4 h-4 md:w-5 md:h-5 text-[#0056A6] mt-1 mr-2" />
-                <p className="text-sm md:text-base">Build up daily up to date of month Pareto chart</p>
+                <p className="text-sm md:text-base">Build up daily upto date of month Pareto chart</p>
               </div>
               <div className="flex items-start">
                 <ChevronDoubleRightIcon className="w-4 h-4 md:w-5 md:h-5 text-[#0056A6] mt-1 mr-2" />
@@ -519,10 +519,10 @@ Our goal is to empower you with tailored solutions that drive growth and efficie
               className="w-full md:w-[650px] bg-white shadow-md rounded-2xl p-6 md:p-8 text-justify hover:shadow-xl transition relative group mt-6 md:mt-0"
             >
               <DollarSign className="w-10 h-10 md:w-12 md:h-12 text-[#D62828] mb-4 group-hover:text-red-700 transition-colors" />
-              <h3 className="text-lg md:text-xl font-semibold text-[#0056A6] mb-2">
+              <h3 className="text-xl md:text-xl font-semibold text-[#0056A6] mb-2">
                 Cost management:
               </h3>
-              <h4 className="text-lg md:text-xl font-semibold text-[#0056A6] mb-2">
+              <h4 className="text-lg md:text-lg font-semibold text-[#0056A6] mb-2">
                 Data Analytics and Budgeting
               </h4>
               <div className="flex items-start">

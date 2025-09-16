@@ -22,7 +22,7 @@ export default function Footer() {
         <div>
           {/* <h2 className="flex items-center text-xl text-[#D62828] font-bold"> */}
           
-            <img src={image} alt="" className="w-50 h-15 rounded-sm m-2"  />
+            <img src={image} alt="" className="w-60 h-15 rounded-sm m-2"  />
             {/* Maven  */}
           {/* </h2> */}
 
@@ -33,7 +33,7 @@ export default function Footer() {
            
                        </span> */}
 
-          <p className="mt-4 text-gray-200 leading-relaxed">
+          <p className="mt-4 ms-2 text-gray-200 leading-relaxed">
           Technical and Management Advisory Services, Business Process Improvement
           </p>
         </div>

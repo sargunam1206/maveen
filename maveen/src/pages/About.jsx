@@ -7,7 +7,7 @@ import {
   faDollarSign,
   faBolt,
 } from "@fortawesome/free-solid-svg-icons";
-import mission from "../assets/mission.jpg"
+import mission from "../assets/mission.png"
 import team from "../assets/team.jpg"
 
 const About = () => {
@@ -127,7 +127,7 @@ const About = () => {
   >
     {/* Left Content */}
     <div className="flex flex-col justify-center">
-      <p className="bg-white text-black p-6 sm:p-8 rounded-lg text-sm sm:text-base md:text-xl font-medium">
+      <p className="bg-white text-gray-700 p-6 sm:p-8 rounded-lg text-sm sm:text-base md:text-lg font-medium">
         To empower organizations to achieve sustainable growth by improving
         efficiency, productivity and quality.
       </p>
@@ -138,7 +138,7 @@ const About = () => {
       <img
         src={mission}
         alt="Our Mission"
-        className="w-full max-w-md rounded-lg border-2 border-gray-300 hover:shadow-md hover:scale-105 transition transform duration-300"
+        className="w-full max-w-md rounded-lg border-2 border-gray-300  hover:scale-105 transition transform duration-300"
       />
     </div>
   </div>
@@ -160,7 +160,7 @@ const About = () => {
       <img
         src={team}
         alt="Team"
-        className="rounded-lg shadow-md border-2 border-gray-300 w-full max-w-md hover:shadow-lg hover:scale-105 transition transform duration-300"
+        className="rounded-lg border-2 border-gray-300 w-full max-w-md  hover:scale-105 transition transform duration-300"
       />
     </div>
 
@@ -187,7 +187,7 @@ const About = () => {
             Operational Excellence (OpEx)
           </h1>
           <p className="p-3 text-xl max-w-3xl">
-            We help businesses implement continuous improvement across all
+            We help businesses to implement continuous improvement across all
             aspects of operations by 
           </p>
           </div>
