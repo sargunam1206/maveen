@@ -335,10 +335,10 @@ const Services = () => {
                 <ChevronDoubleRightIcon className="w-6 h-4 md:w-5 md:h-5 text-[#0056A6] mt-1 mr-2" />
                 <p className="text-sm md:text-base">Breakdown maintenance tracking, Cost Analysis and Action Plan</p>
               </div>
-              <div className="flex items-start">
+              {/* <div className="flex items-start">
                 <ChevronDoubleRightIcon className="w-8 h-4 md:w-5 md:h-5 text-[#0056A6] mt-1 mr-2" />
                 <p className="text-sm md:text-base">Overall Equipment Effectiveness (OEE), Loss Analysis, Action Plan to reduce loss and payback</p>
-              </div>
+              </div> */}
               <div className="flex items-start">
                 <ChevronDoubleRightIcon className="w-4 h-4 md:w-5 md:h-5 text-[#0056A6] mt-1 mr-2" />
                 <p className="text-sm md:text-base">Autonomous Maintenance and CLIT  Sheet</p>
@@ -462,7 +462,7 @@ const Services = () => {
             <motion.div
               variants={itemVariants}
               whileHover={{ scale: 1.03, y: -5 }}
-              className="w-full max-w-md md:w-[450px] bg-white shadow-md rounded-2xl p-6 md:p-8 text-justify hover:shadow-xl transition relative group"
+              className="w-full md:w-[650px] bg-white shadow-md rounded-2xl p-6 md:p-8 text-justify hover:shadow-xl transition relative group mt-6 md:mt-0"
             >
               <ClipboardList className="w-10 h-10 md:w-12 md:h-12 text-[#D62828] mb-4 group-hover:text-red-700 transition-colors" />
               <h3 className="text-lg md:text-xl font-semibold text-[#0056A6] mb-2">
@@ -483,10 +483,10 @@ const Services = () => {
                 <ChevronDoubleRightIcon className="w-4 h-4 md:w-5 md:h-5 text-[#0056A6] mt-1 mr-2" />
                 <p className="text-sm md:text-base">Develop tracking of staff performance</p>
               </div>
-              <div className="flex items-start">
+              {/* <div className="flex items-start">
                 <ChevronDoubleRightIcon className="w-6 h-4  md:h-5 text-[#0056A6] mt-1 mr-2" />
                 <p className="text-sm md:text-base">Develop a mechanism for daily data collection for all types of KPI / KRA</p>
-              </div>
+              </div> */}
               <div className="flex items-start">
                 <ChevronDoubleRightIcon className="w-4 h-4 md:w-5 md:h-5 text-[#0056A6] mt-1 mr-2" />
                 <p className="text-sm md:text-base">Develop review and analysis mechanism</p>
@@ -514,7 +514,7 @@ const Services = () => {
             <motion.div
               variants={itemVariants}
               whileHover={{ scale: 1.03, y: -5 }}
-              className="w-full md:w-[850px] bg-white shadow-md rounded-2xl p-6 md:p-8 text-justify hover:shadow-xl transition relative group mt-6 md:mt-0"
+              className="w-full md:w-[650px] bg-white shadow-md rounded-2xl p-6 md:p-8 text-justify hover:shadow-xl transition relative group mt-6 md:mt-0"
             >
               <DollarSign className="w-10 h-10 md:w-12 md:h-12 text-[#D62828] mb-4 group-hover:text-red-700 transition-colors" />
               <h3 className="text-lg md:text-xl font-semibold text-[#0056A6] mb-2">

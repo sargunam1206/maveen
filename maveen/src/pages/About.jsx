@@ -62,7 +62,7 @@ const About = () => {
     },
     {
       icon:"6",
-      title:"Productivity Management",
+      title:"Productivity Improvement",
       discription:"Plan Vs Actual / PPC",
     },
      {
