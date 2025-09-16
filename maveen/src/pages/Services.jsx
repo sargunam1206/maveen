@@ -48,14 +48,16 @@ const Services = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
-        className="border-gray-700 flex flex-col justify-center items-center py-8 md:py-10 px-4 md:px-6 text-center"
+        className="border-gray-700 flex flex-col justify-center items-center py-4 md:py-10 px-4 md:px-6 text-center"
       >
         <h1 className="text-xl md:text-[28px] text-[#0050A0] font-bold mb-4">
           Services
         </h1>
         <p className="p-4 md:p-6 w-full max-w-3xl bg-white rounded-lg font-semibold text-sm sm:text-base md:text-lg text-justify ">            
           {/* Our services are crafted with your success in mind, ensuring innovative solutions that adapt to your unique challenges. */}
-          We design our services to drive your success, delivering innovative solutions tailored to your unique challenges.
+          We design our services with your success at the center, offering solutions that address your unique challenges.
+Through innovation and strategic thinking, we deliver results that create real value and long-term impact.
+Our goal is to empower you with tailored solutions that drive growth and efficiency.
         </p>
       </motion.section>
 
@@ -65,14 +67,14 @@ const Services = () => {
         whileInView="visible"
         viewport={{ amount: 0.3 }}
         variants={containerVariants}
-        className="bg-gray-50 py-12 md:py-16"
+        className="bg-gray-50 py-8 md:py-8"
       >
         <div className="max-w-8xl mx-auto text-center px-4 md:px-6">
-          <motion.h2 variants={itemVariants} className="text-2xl md:text-[28px] text-[#0050A0] font-bold mb-4">
+          <motion.h2 variants={itemVariants} className="text-2xl md:text-[28px] text-[#0050A0] font-bold mb-7">
             Business Process Improvement
           </motion.h2>
           
-          <motion.div variants={containerVariants} className="flex flex-col md:flex-row md:justify-center gap-6 md:gap-8 mt-6 md:mt-8">
+          <motion.div variants={containerVariants} className="flex flex-col md:flex-row md:justify-center gap-6 md:gap-8 mt-2 md:mt-8">
             {/* Lean Manufacturing */}
             <motion.div
               variants={itemVariants}

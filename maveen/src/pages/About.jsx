@@ -188,7 +188,7 @@ const About = () => {
           </h1>
           <p className="p-3 text-xl max-w-3xl">
             We help businesses implement continuous improvement across all
-            aspects of operations by:
+            aspects of operations by 
           </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 px-10 py-15">
