@@ -405,7 +405,7 @@ Our goal is to empower you with tailored solutions that drive growth and efficie
               </div>
               <div className="flex items-start">
                 <ChevronDoubleRightIcon className="w-18 h-4 md:w-10 md:h-5 text-[#0056A6] mt-1 mr-2" />
-                <p className="text-sm md:text-base">Plant layout using Heijunka and Lean concept such as Value Stream Map, Route Map - Seiryu'ka, reduction in Main &amp; material movement, operator utilization (MOP), TAKT time, FIFO, Floor Space utilization, Quality - TPM aspect</p>
+                <p className="text-sm md:text-base">Plant layout using Heijunka and Lean concept such as Value Stream Map, Route Map - Seiryu'ka, reduction in Man &amp; material movement, operator utilization (MOP), TAKT time, FIFO, Floor Space utilization, Quality - TPM aspect</p>
               </div>
               <div className="flex items-start">
                 <ChevronDoubleRightIcon className="w-8 h-4 md:w-5 md:h-5 text-[#0056A6] mt-1 mr-2" />
@@ -471,7 +471,7 @@ Our goal is to empower you with tailored solutions that drive growth and efficie
                 Daily work management and Sustenance:
               </h3>
               <h4 className="text-lg md:text-lg font-semibold text-[#0056A6] mb-2">
-                KRA Tracking and Sustenance
+                KRA / KPA Tracking and Sustenance
               </h4>
               <div className="flex items-start">
                 <ChevronDoubleRightIcon className="w-4 h-4 md:w-5 md:h-5 text-[#0056A6] mt-1 mr-2" />
