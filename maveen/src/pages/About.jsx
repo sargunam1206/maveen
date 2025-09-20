@@ -102,7 +102,7 @@ const About = () => {
 </p> */}
 
  
-          <p className="text-xl text-maven-gray max-w-3xl mx-auto leading-relaxed text-justify ">
+          <p className="text-xl text-maven-gray max-w-3xl mx-auto  text-justify ">
     At Maven Yanim, we are a group of passionate{" "}
   <span className="text-[#0050A0]">
     consultants, engineers and strategists
@@ -127,7 +127,7 @@ const About = () => {
   >
     {/* Left Content */}
     <div className="flex flex-col justify-center">
-      <p className="bg-white text-gray-700 p-6 sm:p-8 rounded-lg text-sm sm:text-base md:text-lg font-medium">
+      <p className="bg-white text-gray-700 p-6 sm:p-8 rounded-lg text-xl md:text-lg font-medium">
         To empower organizations to achieve sustainable growth by improving
         efficiency, productivity and quality.
       </p>
@@ -146,31 +146,30 @@ const About = () => {
 
   
 
-<div className="flex flex-col justify-center items-center py-10 px-6">
+<div className="flex flex-col justify-center items-center ">
   <h1 className="text-[28px] lg:text-[28px] sm:text-2xl md:text-2xl text-[#0050A0] font-bold mb-4 mt-4 text-center">
     Our Team
   </h1>
 
   {/* Main container */}
-  <div className="flex flex-col sm:flex-row items-center gap-6 bg-white  
-  rounded-lg px-13 py-4 w-full " data-aos="zoom-in">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-10 px-6 " data-aos="zoom-in">
 
     {/* Left Side: Image */}
-    <div className="w-full sm:w-1/2  h-80 flex justify-center">
+    <div className="flex justify-center h-75">
       <img
         src={team}
         alt="Team"
-        className="rounded-lg border-2 border-gray-300 w-full max-w-md  hover:scale-105 transition transform duration-300"
+        className="w-full max-w-md rounded-lg border-2 border-gray-300  hover:scale-105 transition transform duration-300"
       />
     </div>
 
     {/* Right Side: Icon + Content */}
-    <div className="w-full sm:w-1/2 flex flex-col sm:flex-row items-start  gap-3">
+    <div className="w-full  flex flex-col sm:flex-row items-start  gap-2 px-5">
      
-      <p className="text-gray-700 font-medium text-sm sm:text-base md:text-lg text-justify">
+      <p className="text-gray-700 font-medium text-xl  md:text-lg text-justify ">
         <FontAwesomeIcon
         icon={faUsers}
-        className="text-[#D62828] text-xl sm:text-4xl pr-4 "
+        className="text-[#D62828] text-xl sm:text-xl pr-4 "
       /> Our consultants bring extensive experience and have
         successfully implemented OpEx projects for over{" "}
         <span className="text-[#D62828]">40 industries since 2014.</span> With a
